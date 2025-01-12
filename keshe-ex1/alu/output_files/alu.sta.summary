@@ -1,0 +1,65 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'CPR2'
+Slack : -3.038
+TNS   : -18.593
+
+Type  : Slow 1200mV 85C Model Hold 'CPR2'
+Slack : 0.930
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CPR0'
+Slack : -3.000
+TNS   : -14.896
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CPR1'
+Slack : -3.000
+TNS   : -14.896
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CPR2'
+Slack : -3.000
+TNS   : -14.896
+
+Type  : Slow 1200mV 0C Model Setup 'CPR2'
+Slack : -2.822
+TNS   : -17.080
+
+Type  : Slow 1200mV 0C Model Hold 'CPR2'
+Slack : 0.818
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CPR0'
+Slack : -3.000
+TNS   : -14.896
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CPR1'
+Slack : -3.000
+TNS   : -14.896
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CPR2'
+Slack : -3.000
+TNS   : -14.896
+
+Type  : Fast 1200mV 0C Model Setup 'CPR2'
+Slack : -0.725
+TNS   : -3.501
+
+Type  : Fast 1200mV 0C Model Hold 'CPR2'
+Slack : 0.359
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CPR2'
+Slack : -3.000
+TNS   : -11.523
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CPR0'
+Slack : -3.000
+TNS   : -11.520
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CPR1'
+Slack : -3.000
+TNS   : -11.520
+
+------------------------------------------------------------

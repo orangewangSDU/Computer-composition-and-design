@@ -1,0 +1,16 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/wyc/Desktop/Computer Design/keshe-ex4/RB/RB.bdf
+source_file = 1, C:/Users/wyc/Desktop/Computer Design/keshe-ex4/RB/db/RB.cbx.xml
+design_name = RB
+instance = comp, \ADD~input\, ADD~input, RB, 1
+instance = comp, \XOR~input\, XOR~input, RB, 1
+instance = comp, \RB~output\, RB~output, RB, 1
+instance = comp, \T1~input\, T1~input, RB, 1
+instance = comp, \OR~input\, OR~input, RB, 1
+instance = comp, \NOR~input\, NOR~input, RB, 1
+instance = comp, \inst1~1\, inst1~1, RB, 1
+instance = comp, \W2~input\, W2~input, RB, 1
+instance = comp, \AND~input\, AND~input, RB, 1
+instance = comp, \SUB~input\, SUB~input, RB, 1
+instance = comp, \MUL~input\, MUL~input, RB, 1
+instance = comp, \inst1~0\, inst1~0, RB, 1

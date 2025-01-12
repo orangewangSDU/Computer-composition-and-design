@@ -1,0 +1,24 @@
+# do multiply.do 
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module multiply
+# 
+# Top level modules:
+# 	multiply
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module multiply_vlg_sample_tst
+# -- Compiling module multiply_vlg_check_tst
+# -- Compiling module multiply_vlg_vec_tst
+# 
+# Top level modules:
+# 	multiply_vlg_vec_tst
+# vsim -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.multiply_vlg_vec_tst 
+# Loading work.multiply_vlg_vec_tst
+# Loading work.multiply
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading work.multiply_vlg_sample_tst
+# Loading work.multiply_vlg_check_tst
+# Simulation passed !
+# ** Note: $finish    : multiply.vt(583)
+#    Time: 1 us  Iteration: 0  Instance: /multiply_vlg_vec_tst/tb_out

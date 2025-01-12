@@ -1,0 +1,9 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/wyc/Desktop/Computer Design/keshe-ex4/G/G.bdf
+source_file = 1, C:/Users/wyc/Desktop/Computer Design/keshe-ex4/G/db/G.cbx.xml
+design_name = G
+instance = comp, \G~output\, G~output, G, 1
+instance = comp, \W2~input\, W2~input, G, 1
+instance = comp, \HALT~input\, HALT~input, G, 1
+instance = comp, \T1~input\, T1~input, G, 1
+instance = comp, \inst~0\, inst~0, G, 1

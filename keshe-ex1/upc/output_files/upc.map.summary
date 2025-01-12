@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Tue Oct 08 12:39:39 2024
+Quartus II 64-Bit Version : 13.0.0 Build 156 04/24/2013 SJ Full Version
+Revision Name : upc
+Top-level Entity Name : upc
+Family : Cyclone IV E
+Total logic elements : 14
+    Total combinational functions : 14
+    Dedicated logic registers : 8
+Total registers : 8
+Total pins : 21
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

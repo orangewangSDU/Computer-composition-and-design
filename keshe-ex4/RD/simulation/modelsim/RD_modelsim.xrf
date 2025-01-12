@@ -1,0 +1,14 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/wyc/Desktop/Computer Design/keshe-ex4/RD/RD.bdf
+source_file = 1, C:/Users/wyc/Desktop/Computer Design/keshe-ex4/RD/db/RD.cbx.xml
+design_name = RD
+instance = comp, \MOV3~input\, MOV3~input, RD, 1
+instance = comp, \RD~output\, RD~output, RD, 1
+instance = comp, \T2~input\, T2~input, RD, 1
+instance = comp, \T3~input\, T3~input, RD, 1
+instance = comp, \W1~input\, W1~input, RD, 1
+instance = comp, \MOV2~input\, MOV2~input, RD, 1
+instance = comp, \MOV1~input\, MOV1~input, RD, 1
+instance = comp, \W2~input\, W2~input, RD, 1
+instance = comp, \inst7~0\, inst7~0, RD, 1
+instance = comp, \inst7~1\, inst7~1, RD, 1

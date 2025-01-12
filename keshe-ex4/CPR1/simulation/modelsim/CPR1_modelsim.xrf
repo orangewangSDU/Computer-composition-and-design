@@ -1,0 +1,9 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/wyc/Desktop/Computer Design/keshe-ex4/CPR1/CPR1.bdf
+source_file = 1, C:/Users/wyc/Desktop/Computer Design/keshe-ex4/CPR1/db/CPR1.cbx.xml
+design_name = CPR1
+instance = comp, \CPR1~output\, CPR1~output, CPR1, 1
+instance = comp, \W2~input\, W2~input, CPR1, 1
+instance = comp, \MOV2~input\, MOV2~input, CPR1, 1
+instance = comp, \T3~input\, T3~input, CPR1, 1
+instance = comp, \inst~0\, inst~0, CPR1, 1

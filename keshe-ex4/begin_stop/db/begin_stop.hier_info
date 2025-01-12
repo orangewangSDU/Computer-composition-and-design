@@ -1,0 +1,9 @@
+|begin_stop
+CLK <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Continuous_clk => inst.IN0
+switch => inst4.ACLR
+switch => inst2.IN1
+Single_clk => inst4.CLK
+G => inst3.IN0
+
+

@@ -1,0 +1,15 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/wyc/Desktop/Computer Design/keshe-ex3/danyuan/danyuan.bdf
+source_file = 1, C:/Users/wyc/Desktop/Computer Design/keshe-ex3/danyuan/db/danyuan.cbx.xml
+source_file = 1, C:/Users/wyc/Desktop/Computer Design/keshe-ex3/danyuan/allplus.bdf
+design_name = danyuan
+instance = comp, \xxi~output\, xxi~output, danyuan, 1
+instance = comp, \yyi~output\, yyi~output, danyuan, 1
+instance = comp, \cout~output\, cout~output, danyuan, 1
+instance = comp, \partout~output\, partout~output, danyuan, 1
+instance = comp, \xi~input\, xi~input, danyuan, 1
+instance = comp, \yi~input\, yi~input, danyuan, 1
+instance = comp, \partji~input\, partji~input, danyuan, 1
+instance = comp, \ccin~input\, ccin~input, danyuan, 1
+instance = comp, \inst|inst5~0\, inst|inst5~0, danyuan, 1
+instance = comp, \inst|inst1~0\, inst|inst1~0, danyuan, 1

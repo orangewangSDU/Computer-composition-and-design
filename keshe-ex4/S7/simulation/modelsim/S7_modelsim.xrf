@@ -1,0 +1,10 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/wyc/Desktop/Computer Design/keshe-ex4/S7/S7.bdf
+source_file = 1, C:/Users/wyc/Desktop/Computer Design/keshe-ex4/S7/db/S7.cbx.xml
+design_name = S7
+instance = comp, \S7~output\, S7~output, S7, 1
+instance = comp, \LSL~input\, LSL~input, S7, 1
+instance = comp, \T1~input\, T1~input, S7, 1
+instance = comp, \LSR~input\, LSR~input, S7, 1
+instance = comp, \W2~input\, W2~input, S7, 1
+instance = comp, \inst~0\, inst~0, S7, 1

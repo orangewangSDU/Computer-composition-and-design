@@ -1,0 +1,16 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/wyc/Desktop/Computer Design/keshe-ex4/PB/PB.bdf
+source_file = 1, C:/Users/wyc/Desktop/Computer Design/keshe-ex4/PB/db/PB.cbx.xml
+design_name = PB
+instance = comp, \W2~input\, W2~input, PB, 1
+instance = comp, \PB~output\, PB~output, PB, 1
+instance = comp, \MOV1~input\, MOV1~input, PB, 1
+instance = comp, \MOV2~input\, MOV2~input, PB, 1
+instance = comp, \MOV3~input\, MOV3~input, PB, 1
+instance = comp, \inst2~1\, inst2~1, PB, 1
+instance = comp, \T1~input\, T1~input, PB, 1
+instance = comp, \T3~input\, T3~input, PB, 1
+instance = comp, \W1~input\, W1~input, PB, 1
+instance = comp, \inst2~0\, inst2~0, PB, 1
+instance = comp, \T2~input\, T2~input, PB, 1
+instance = comp, \inst2~2\, inst2~2, PB, 1

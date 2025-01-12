@@ -1,0 +1,11 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/wyc/Desktop/Computer Design/keshe-ex3/allplus/allplus.bdf
+source_file = 1, C:/Users/wyc/Desktop/Computer Design/keshe-ex3/allplus/db/allplus.cbx.xml
+design_name = allplus
+instance = comp, \s~output\, s~output, allplus, 1
+instance = comp, \co~output\, co~output, allplus, 1
+instance = comp, \b~input\, b~input, allplus, 1
+instance = comp, \a~input\, a~input, allplus, 1
+instance = comp, \cin~input\, cin~input, allplus, 1
+instance = comp, \inst1~0\, inst1~0, allplus, 1
+instance = comp, \inst5~0\, inst5~0, allplus, 1

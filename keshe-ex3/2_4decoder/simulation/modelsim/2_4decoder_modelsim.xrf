@@ -1,0 +1,13 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/wyc/Desktop/Computer Design/keshe-ex3/2_4decoder/2_4decoder.bdf
+source_file = 1, C:/Users/wyc/Desktop/Computer Design/keshe-ex3/2_4decoder/db/2_4decoder.cbx.xml
+design_name = \2_4decoder\
+instance = comp, \Q0~output\, Q0~output, \2_4decoder\, 1
+instance = comp, \Q1~output\, Q1~output, \2_4decoder\, 1
+instance = comp, \Q2~output\, Q2~output, \2_4decoder\, 1
+instance = comp, \Q3~output\, Q3~output, \2_4decoder\, 1
+instance = comp, \A~input\, A~input, \2_4decoder\, 1
+instance = comp, \B~input\, B~input, \2_4decoder\, 1
+instance = comp, \inst2~0\, inst2~0, \2_4decoder\, 1
+instance = comp, \inst2~1\, inst2~1, \2_4decoder\, 1
+instance = comp, \inst2~2\, inst2~2, \2_4decoder\, 1

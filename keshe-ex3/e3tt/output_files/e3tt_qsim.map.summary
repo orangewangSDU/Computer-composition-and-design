@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Tue Dec 10 22:49:28 2024
+Quartus II 64-Bit Version : 13.0.0 Build 156 04/24/2013 SJ Full Version
+Revision Name : e3tt_qsim
+Top-level Entity Name : e3tt
+Family : Cyclone IV E
+Total logic elements : 658
+    Total combinational functions : 583
+    Dedicated logic registers : 261
+Total registers : 261
+Total pins : 14
+Total virtual pins : 0
+Total memory bits : 10,240
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

@@ -1,0 +1,43 @@
+|choose_2
+Z[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Z[1] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Z[2] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Z[3] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Z[4] <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Z[5] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+Z[6] <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+Z[7] <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+R1[0] => inst16.IN0
+R1[1] => inst17.IN0
+R1[2] => inst18.IN0
+R1[3] => inst19.IN0
+R1[4] => inst20.IN0
+R1[5] => inst21.IN0
+R1[6] => inst22.IN0
+R1[7] => inst23.IN0
+EN1 => inst17.IN1
+EN1 => inst18.IN1
+EN1 => inst19.IN1
+EN1 => inst20.IN1
+EN1 => inst21.IN1
+EN1 => inst22.IN1
+EN1 => inst23.IN1
+EN1 => inst16.IN1
+EN0 => inst9.IN0
+EN0 => inst10.IN0
+EN0 => inst11.IN0
+EN0 => inst12.IN0
+EN0 => inst13.IN0
+EN0 => inst14.IN0
+EN0 => inst15.IN0
+EN0 => inst8.IN0
+R0[0] => inst8.IN1
+R0[1] => inst9.IN1
+R0[2] => inst10.IN1
+R0[3] => inst11.IN1
+R0[4] => inst12.IN1
+R0[5] => inst13.IN1
+R0[6] => inst14.IN1
+R0[7] => inst15.IN1
+
+

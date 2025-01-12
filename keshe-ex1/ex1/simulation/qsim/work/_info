@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\wyc\Desktop\lab1\ex1\ex1\simulation\qsim
+vex1
+Z1 !s100 5lLGNS5e7X7Ym[IQ2KMlD0
+Z2 I1ibVRT0BC1AzX?PdfZi;51
+Z3 VZ8>z9n8;Y9M0e156Zf`bU2
+Z4 dC:\Users\wyc\Desktop\Computer Design\ex1\ex1\simulation\qsim
+Z5 w1728368761
+Z6 8ex1.vo
+Z7 Fex1.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|ex1.vo|
+Z10 o-work work -O0
+!i10b 1
+!s85 0
+Z11 !s108 1728368763.325000
+Z12 !s107 ex1.vo|
+!s101 -O0
+vex1_vlg_check_tst
+!i10b 1
+Z13 !s100 5=`>6DbUH>A5PEKh:>[E61
+Z14 Iz2B4T5L[elG`4[obW9oBj1
+Z15 VaM?bazY55>0MXbcSQ2f7O1
+R4
+R5
+Z16 8ex1.vt
+Z17 Fex1.vt
+L0 59
+R8
+r1
+!s85 0
+31
+Z18 !s108 1728368763.392000
+Z19 !s107 ex1.vt|
+Z20 !s90 -work|work|ex1.vt|
+!s101 -O0
+R10
+vex1_vlg_sample_tst
+!i10b 1
+Z21 !s100 B>lU<ZK6E?_jTBOU@[khi2
+Z22 Ie1e@kA<d<WTc0k9FA1Tkj2
+Z23 V@o]fX3T1H2Uhd@JL8h3mi1
+R4
+R5
+R16
+R17
+L0 29
+R8
+r1
+!s85 0
+31
+R18
+R19
+R20
+!s101 -O0
+R10
+vex1_vlg_vec_tst
+!i10b 1
+Z24 !s100 :J2YnlVKQIi8K@4M4GRF<1
+Z25 IIVXGa8E<I[X313gG6R=mf2
+Z26 VCoe^HX4[bNIJ24H`W_a_=2
+R4
+R5
+R16
+R17
+Z27 L0 343
+R8
+r1
+!s85 0
+31
+R18
+R19
+R20
+!s101 -O0
+R10

@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="ex3">
+		<CBX_INST_ENTRY INSTANCE_NAME="|ex3|ALU:inst27|divv:inst29|div:inst|lpm_divide:LPM_DIVIDE_component" CBX_FILE_NAME="lpm_divide_60q.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|ex3|RAM:inst39|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_5th1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|ex3|ROM:inst40|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_gm91.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

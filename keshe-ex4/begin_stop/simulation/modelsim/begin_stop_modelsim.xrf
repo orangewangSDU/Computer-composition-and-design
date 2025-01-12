@@ -1,0 +1,11 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/wyc/Desktop/Computer Design/keshe-ex3/begin_stop/begin_stop.bdf
+source_file = 1, C:/Users/wyc/Desktop/Computer Design/keshe-ex3/begin_stop/db/begin_stop.cbx.xml
+design_name = begin_stop
+instance = comp, \Single_clk~input\, Single_clk~input, begin_stop, 1
+instance = comp, \CLK~output\, CLK~output, begin_stop, 1
+instance = comp, \Continuous_clk~input\, Continuous_clk~input, begin_stop, 1
+instance = comp, \G~input\, G~input, begin_stop, 1
+instance = comp, \switch~input\, switch~input, begin_stop, 1
+instance = comp, \inst4~feeder\, inst4~feeder, begin_stop, 1
+instance = comp, \inst~0\, inst~0, begin_stop, 1

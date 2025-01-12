@@ -1,0 +1,15 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/wyc/Desktop/Computer Design/keshe-ex4/CPMAR/CPMAR.bdf
+source_file = 1, C:/Users/wyc/Desktop/Computer Design/keshe-ex4/CPMAR/db/CPMAR.cbx.xml
+design_name = CPMAR
+instance = comp, \MOV2~input\, MOV2~input, CPMAR, 1
+instance = comp, \CPMAR~output\, CPMAR~output, CPMAR, 1
+instance = comp, \T1~input\, T1~input, CPMAR, 1
+instance = comp, \W2~input\, W2~input, CPMAR, 1
+instance = comp, \MOV3~input\, MOV3~input, CPMAR, 1
+instance = comp, \MOV1~input\, MOV1~input, CPMAR, 1
+instance = comp, \inst~0\, inst~0, CPMAR, 1
+instance = comp, \W1~input\, W1~input, CPMAR, 1
+instance = comp, \T3~input\, T3~input, CPMAR, 1
+instance = comp, \inst2~0\, inst2~0, CPMAR, 1
+instance = comp, \inst~1\, inst~1, CPMAR, 1

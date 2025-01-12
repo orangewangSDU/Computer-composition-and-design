@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\wyc\Desktop\Computer Design\keshe-ex3\multiply\simulation\qsim
+vmultiply
+Z1 IPEIkRh6NIOR50ZXgnMY<Q3
+Z2 VCzbVE?S;j@Rg@nKQ0a>5V2
+Z3 dC:\Users\wyc\Desktop\Computer Design\keshe-ex3\multiply\simulation\qsim
+Z4 w1732212790
+Z5 8multiply.vo
+Z6 Fmultiply.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+!i10b 1
+Z9 !s100 ?:@6n]h]0z:OcRo3h4D2W1
+!s85 0
+Z10 !s108 1732212792.527000
+Z11 !s107 multiply.vo|
+Z12 !s90 -work|work|multiply.vo|
+!s101 -O0
+vmultiply_vlg_check_tst
+!i10b 1
+!s100 QZgTHR=cHDFfk=z>9CJIe1
+I05MAT^@EEHjB]@`:Hia133
+VT3@?m_3CQZlR97=8AYD8X3
+R3
+Z13 w1732212789
+Z14 8multiply.vt
+Z15 Fmultiply.vt
+L0 87
+R7
+r1
+!s85 0
+31
+Z16 !s108 1732212792.623000
+Z17 !s107 multiply.vt|
+Z18 !s90 -work|work|multiply.vt|
+!s101 -O0
+R8
+vmultiply_vlg_sample_tst
+!i10b 1
+!s100 <`O?mJ>KKW>@NKfNk`3361
+ICLTFkhJn?2>ZM;eVigk^D3
+VE?4U`U<`BWSB@?1f:[TUC1
+R3
+R13
+R14
+R15
+L0 29
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R8
+vmultiply_vlg_vec_tst
+!i10b 1
+!s100 ;bGU@3255K?XRfmPIAEjl1
+I9`74ACZ?nW;@f_S_b6`FF0
+VICnAhV6H3=X<kPgSAP<873
+R3
+R13
+R14
+R15
+L0 587
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R8

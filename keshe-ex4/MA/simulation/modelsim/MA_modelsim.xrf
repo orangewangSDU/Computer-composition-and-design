@@ -1,0 +1,14 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/wyc/Desktop/Computer Design/keshe-ex4/MA/MA.bdf
+source_file = 1, C:/Users/wyc/Desktop/Computer Design/keshe-ex4/MA/db/MA.cbx.xml
+design_name = MA
+instance = comp, \MOV3~input\, MOV3~input, MA, 1
+instance = comp, \MA~output\, MA~output, MA, 1
+instance = comp, \T2~input\, T2~input, MA, 1
+instance = comp, \T3~input\, T3~input, MA, 1
+instance = comp, \W1~input\, W1~input, MA, 1
+instance = comp, \MOV2~input\, MOV2~input, MA, 1
+instance = comp, \MOV1~input\, MOV1~input, MA, 1
+instance = comp, \W2~input\, W2~input, MA, 1
+instance = comp, \inst3~0\, inst3~0, MA, 1
+instance = comp, \inst3~1\, inst3~1, MA, 1

@@ -1,0 +1,7 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/wyc/Desktop/Computer Design/keshe-ex4/CPIR/CPIR.bdf
+source_file = 1, C:/Users/wyc/Desktop/Computer Design/keshe-ex4/CPIR/db/CPIR.cbx.xml
+design_name = CPIR
+instance = comp, \CPIR~output\, CPIR~output, CPIR, 1
+instance = comp, \T2~input\, T2~input, CPIR, 1
+instance = comp, \W1~input\, W1~input, CPIR, 1

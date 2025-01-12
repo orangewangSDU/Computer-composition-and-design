@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu Nov 14 20:32:11 2024
+Quartus II 64-Bit Version : 13.0.0 Build 156 04/24/2013 SJ Full Version
+Revision Name : ex3test
+Top-level Entity Name : ex3test
+Family : Cyclone IV E
+Total logic elements : 671
+    Total combinational functions : 599
+    Dedicated logic registers : 258
+Total registers : 258
+Total pins : 13
+Total virtual pins : 0
+Total memory bits : 10,240
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

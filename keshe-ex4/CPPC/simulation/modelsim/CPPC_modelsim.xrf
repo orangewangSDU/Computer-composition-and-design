@@ -1,0 +1,14 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/wyc/Desktop/Computer Design/keshe-ex4/CPPC/CPPC.bdf
+source_file = 1, C:/Users/wyc/Desktop/Computer Design/keshe-ex4/CPPC/db/CPPC.cbx.xml
+design_name = CPPC
+instance = comp, \MOV3~input\, MOV3~input, CPPC, 1
+instance = comp, \CPPC~output\, CPPC~output, CPPC, 1
+instance = comp, \T3~input\, T3~input, CPPC, 1
+instance = comp, \T2~input\, T2~input, CPPC, 1
+instance = comp, \W1~input\, W1~input, CPPC, 1
+instance = comp, \MOV2~input\, MOV2~input, CPPC, 1
+instance = comp, \MOV1~input\, MOV1~input, CPPC, 1
+instance = comp, \W2~input\, W2~input, CPPC, 1
+instance = comp, \inst2~0\, inst2~0, CPPC, 1
+instance = comp, \inst2~1\, inst2~1, CPPC, 1

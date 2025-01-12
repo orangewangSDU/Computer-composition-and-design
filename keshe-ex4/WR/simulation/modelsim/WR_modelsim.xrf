@@ -1,0 +1,9 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/wyc/Desktop/Computer Design/keshe-ex4/WR/WR.bdf
+source_file = 1, C:/Users/wyc/Desktop/Computer Design/keshe-ex4/WR/db/WR.cbx.xml
+design_name = WR
+instance = comp, \WR~output\, WR~output, WR, 1
+instance = comp, \W2~input\, W2~input, WR, 1
+instance = comp, \MOV3~input\, MOV3~input, WR, 1
+instance = comp, \T4~input\, T4~input, WR, 1
+instance = comp, \inst~0\, inst~0, WR, 1

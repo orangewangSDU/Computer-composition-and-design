@@ -1,0 +1,390 @@
+Simulator report for ex1_qsim
+Mon Oct 14 19:57:47 2024
+Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. |ex1|ROM:inst2|altsyncram:altsyncram_component|altsyncram_g3a1:auto_generated|ALTSYNCRAM
+  6. Coverage Summary
+  7. Complete 1/0-Value Coverage
+  8. Missing 1-Value Coverage
+  9. Missing 0-Value Coverage
+ 10. Simulator INI Usage
+ 11. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 176 nodes    ;
+; Simulation Coverage         ;      63.07 % ;
+; Total Number of Transitions ; 1819         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone III  ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                                            ;
++--------------------------------------------------------------------------------------------+------------------------------------------------------------------+---------------+
+; Option                                                                                     ; Setting                                                          ; Default Value ;
++--------------------------------------------------------------------------------------------+------------------------------------------------------------------+---------------+
+; Simulation mode                                                                            ; Functional                                                       ; Timing        ;
+; Start time                                                                                 ; 0 ns                                                             ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                                              ;               ;
+; Vector input source                                                                        ; C:/Users/wyc/Desktop/Computer Design/keshe-ex1/ex1/Waveform2.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                                               ; On            ;
+; Check outputs                                                                              ; Off                                                              ; Off           ;
+; Report simulation coverage                                                                 ; On                                                               ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                                               ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                                               ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                                               ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                                              ; Off           ;
+; Detect glitches                                                                            ; Off                                                              ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                                              ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                                              ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                                              ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                                              ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                                               ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                                       ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                                              ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                                              ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                                             ; Auto          ;
+; Interconnect Delay Model Type                                                              ; Transport                                                        ; Transport     ;
+; Cell Delay Model Type                                                                      ; Transport                                                        ; Transport     ;
++--------------------------------------------------------------------------------------------+------------------------------------------------------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 64-Bit to view the waveform report data.
+
+
++------------------------------------------------------------------------------------------+
+; |ex1|ROM:inst2|altsyncram:altsyncram_component|altsyncram_g3a1:auto_generated|ALTSYNCRAM ;
++------------------------------------------------------------------------------------------+
+Please refer to fitter text-based report (*.fit.rpt) to view logical memory report content in ASCII.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      63.07 % ;
+; Total nodes checked                                 ; 176          ;
+; Total output ports checked                          ; 176          ;
+; Total output ports with complete 1/0-value coverage ; 111          ;
+; Total output ports with no 1/0-value coverage       ; 43           ;
+; Total output ports with no 1-value coverage         ; 53           ;
+; Total output ports with no 0-value coverage         ; 55           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                                                            ;
++---------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                   ; Output Port Name                                                                      ; Output Port Type ;
++---------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------+------------------+
+; |ex1|D0                                                                                     ; |ex1|D0                                                                               ; pin_out          ;
+; |ex1|inst10                                                                                 ; |ex1|inst10                                                                           ; out0             ;
+; |ex1|CLK                                                                                    ; |ex1|CLK                                                                              ; out              ;
+; |ex1|CLR                                                                                    ; |ex1|CLR                                                                              ; out              ;
+; |ex1|inst9                                                                                  ; |ex1|inst9                                                                            ; out0             ;
+; |ex1|inst8                                                                                  ; |ex1|inst8                                                                            ; out0             ;
+; |ex1|D1                                                                                     ; |ex1|D1                                                                               ; pin_out          ;
+; |ex1|D2                                                                                     ; |ex1|D2                                                                               ; pin_out          ;
+; |ex1|D3                                                                                     ; |ex1|D3                                                                               ; pin_out          ;
+; |ex1|D4                                                                                     ; |ex1|D4                                                                               ; pin_out          ;
+; |ex1|D5                                                                                     ; |ex1|D5                                                                               ; pin_out          ;
+; |ex1|D6                                                                                     ; |ex1|D6                                                                               ; pin_out          ;
+; |ex1|D7                                                                                     ; |ex1|D7                                                                               ; pin_out          ;
+; |ex1|upc:inst4|74161:inst1|f74161:sub|104                                                   ; |ex1|upc:inst4|74161:inst1|f74161:sub|104                                             ; out0             ;
+; |ex1|upc:inst4|74161:inst1|f74161:sub|110                                                   ; |ex1|upc:inst4|74161:inst1|f74161:sub|110                                             ; regout           ;
+; |ex1|upc:inst4|74161:inst1|f74161:sub|107                                                   ; |ex1|upc:inst4|74161:inst1|f74161:sub|107                                             ; out0             ;
+; |ex1|upc:inst4|74161:inst1|f74161:sub|94                                                    ; |ex1|upc:inst4|74161:inst1|f74161:sub|94                                              ; out0             ;
+; |ex1|upc:inst4|74161:inst1|f74161:sub|99                                                    ; |ex1|upc:inst4|74161:inst1|f74161:sub|99                                              ; regout           ;
+; |ex1|upc:inst4|74161:inst1|f74161:sub|97                                                    ; |ex1|upc:inst4|74161:inst1|f74161:sub|97                                              ; out0             ;
+; |ex1|upc:inst4|74161:inst1|f74161:sub|84                                                    ; |ex1|upc:inst4|74161:inst1|f74161:sub|84                                              ; out0             ;
+; |ex1|upc:inst4|74161:inst1|f74161:sub|87                                                    ; |ex1|upc:inst4|74161:inst1|f74161:sub|87                                              ; regout           ;
+; |ex1|upc:inst4|74161:inst1|f74161:sub|90                                                    ; |ex1|upc:inst4|74161:inst1|f74161:sub|90                                              ; out0             ;
+; |ex1|upc:inst4|74161:inst1|f74161:sub|81                                                    ; |ex1|upc:inst4|74161:inst1|f74161:sub|81                                              ; out0             ;
+; |ex1|upc:inst4|74161:inst1|f74161:sub|9                                                     ; |ex1|upc:inst4|74161:inst1|f74161:sub|9                                               ; regout           ;
+; |ex1|upc:inst4|74161:inst|f74161:sub|80                                                     ; |ex1|upc:inst4|74161:inst|f74161:sub|80                                               ; out0             ;
+; |ex1|upc:inst4|74161:inst|f74161:sub|9                                                      ; |ex1|upc:inst4|74161:inst|f74161:sub|9                                                ; regout           ;
+; |ex1|upc:inst4|74161:inst|f74161:sub|78                                                     ; |ex1|upc:inst4|74161:inst|f74161:sub|78                                               ; out0             ;
+; |ex1|upc:inst4|74161:inst|f74161:sub|79                                                     ; |ex1|upc:inst4|74161:inst|f74161:sub|79                                               ; out0             ;
+; |ex1|ROM:inst2|altsyncram:altsyncram_component|altsyncram_g3a1:auto_generated|ram_block1a0  ; |ex1|ROM:inst2|altsyncram:altsyncram_component|altsyncram_g3a1:auto_generated|q_a[0]  ; portadataout0    ;
+; |ex1|ROM:inst2|altsyncram:altsyncram_component|altsyncram_g3a1:auto_generated|ram_block1a1  ; |ex1|ROM:inst2|altsyncram:altsyncram_component|altsyncram_g3a1:auto_generated|q_a[1]  ; portadataout0    ;
+; |ex1|ROM:inst2|altsyncram:altsyncram_component|altsyncram_g3a1:auto_generated|ram_block1a2  ; |ex1|ROM:inst2|altsyncram:altsyncram_component|altsyncram_g3a1:auto_generated|q_a[2]  ; portadataout0    ;
+; |ex1|ROM:inst2|altsyncram:altsyncram_component|altsyncram_g3a1:auto_generated|ram_block1a3  ; |ex1|ROM:inst2|altsyncram:altsyncram_component|altsyncram_g3a1:auto_generated|q_a[3]  ; portadataout0    ;
+; |ex1|ROM:inst2|altsyncram:altsyncram_component|altsyncram_g3a1:auto_generated|ram_block1a4  ; |ex1|ROM:inst2|altsyncram:altsyncram_component|altsyncram_g3a1:auto_generated|q_a[4]  ; portadataout0    ;
+; |ex1|ROM:inst2|altsyncram:altsyncram_component|altsyncram_g3a1:auto_generated|ram_block1a5  ; |ex1|ROM:inst2|altsyncram:altsyncram_component|altsyncram_g3a1:auto_generated|q_a[5]  ; portadataout0    ;
+; |ex1|ROM:inst2|altsyncram:altsyncram_component|altsyncram_g3a1:auto_generated|ram_block1a6  ; |ex1|ROM:inst2|altsyncram:altsyncram_component|altsyncram_g3a1:auto_generated|q_a[6]  ; portadataout0    ;
+; |ex1|ROM:inst2|altsyncram:altsyncram_component|altsyncram_g3a1:auto_generated|ram_block1a7  ; |ex1|ROM:inst2|altsyncram:altsyncram_component|altsyncram_g3a1:auto_generated|q_a[7]  ; portadataout0    ;
+; |ex1|ROM:inst2|altsyncram:altsyncram_component|altsyncram_g3a1:auto_generated|ram_block1a8  ; |ex1|ROM:inst2|altsyncram:altsyncram_component|altsyncram_g3a1:auto_generated|q_a[8]  ; portadataout0    ;
+; |ex1|ROM:inst2|altsyncram:altsyncram_component|altsyncram_g3a1:auto_generated|ram_block1a16 ; |ex1|ROM:inst2|altsyncram:altsyncram_component|altsyncram_g3a1:auto_generated|q_a[16] ; portadataout0    ;
+; |ex1|ROM:inst2|altsyncram:altsyncram_component|altsyncram_g3a1:auto_generated|ram_block1a17 ; |ex1|ROM:inst2|altsyncram:altsyncram_component|altsyncram_g3a1:auto_generated|q_a[17] ; portadataout0    ;
+; |ex1|ROM:inst2|altsyncram:altsyncram_component|altsyncram_g3a1:auto_generated|ram_block1a18 ; |ex1|ROM:inst2|altsyncram:altsyncram_component|altsyncram_g3a1:auto_generated|q_a[18] ; portadataout0    ;
+; |ex1|ROM:inst2|altsyncram:altsyncram_component|altsyncram_g3a1:auto_generated|ram_block1a19 ; |ex1|ROM:inst2|altsyncram:altsyncram_component|altsyncram_g3a1:auto_generated|q_a[19] ; portadataout0    ;
+; |ex1|ROM:inst2|altsyncram:altsyncram_component|altsyncram_g3a1:auto_generated|ram_block1a20 ; |ex1|ROM:inst2|altsyncram:altsyncram_component|altsyncram_g3a1:auto_generated|q_a[20] ; portadataout0    ;
+; |ex1|ROM:inst2|altsyncram:altsyncram_component|altsyncram_g3a1:auto_generated|ram_block1a21 ; |ex1|ROM:inst2|altsyncram:altsyncram_component|altsyncram_g3a1:auto_generated|q_a[21] ; portadataout0    ;
+; |ex1|ROM:inst2|altsyncram:altsyncram_component|altsyncram_g3a1:auto_generated|ram_block1a22 ; |ex1|ROM:inst2|altsyncram:altsyncram_component|altsyncram_g3a1:auto_generated|q_a[22] ; portadataout0    ;
+; |ex1|ROM:inst2|altsyncram:altsyncram_component|altsyncram_g3a1:auto_generated|ram_block1a23 ; |ex1|ROM:inst2|altsyncram:altsyncram_component|altsyncram_g3a1:auto_generated|q_a[23] ; portadataout0    ;
+; |ex1|alu:inst6|74181:inst1|81                                                               ; |ex1|alu:inst6|74181:inst1|81                                                         ; out0             ;
+; |ex1|alu:inst6|74181:inst1|54                                                               ; |ex1|alu:inst6|74181:inst1|54                                                         ; out0             ;
+; |ex1|alu:inst6|74181:inst1|44                                                               ; |ex1|alu:inst6|74181:inst1|44                                                         ; out0             ;
+; |ex1|alu:inst6|74181:inst1|11                                                               ; |ex1|alu:inst6|74181:inst1|11                                                         ; out0             ;
+; |ex1|alu:inst6|74181:inst1|79                                                               ; |ex1|alu:inst6|74181:inst1|79                                                         ; out0             ;
+; |ex1|alu:inst6|74181:inst1|66                                                               ; |ex1|alu:inst6|74181:inst1|66                                                         ; out0             ;
+; |ex1|alu:inst6|74181:inst1|46                                                               ; |ex1|alu:inst6|74181:inst1|46                                                         ; out0             ;
+; |ex1|alu:inst6|74181:inst1|8                                                                ; |ex1|alu:inst6|74181:inst1|8                                                          ; out0             ;
+; |ex1|alu:inst6|74181:inst1|7                                                                ; |ex1|alu:inst6|74181:inst1|7                                                          ; out0             ;
+; |ex1|alu:inst6|74181:inst1|77                                                               ; |ex1|alu:inst6|74181:inst1|77                                                         ; out0             ;
+; |ex1|alu:inst6|74181:inst1|56                                                               ; |ex1|alu:inst6|74181:inst1|56                                                         ; out0             ;
+; |ex1|alu:inst6|74181:inst1|51                                                               ; |ex1|alu:inst6|74181:inst1|51                                                         ; out0             ;
+; |ex1|alu:inst6|74181:inst1|21                                                               ; |ex1|alu:inst6|74181:inst1|21                                                         ; out0             ;
+; |ex1|alu:inst6|74181:inst1|74                                                               ; |ex1|alu:inst6|74181:inst1|74                                                         ; out0             ;
+; |ex1|alu:inst6|74181:inst1|73                                                               ; |ex1|alu:inst6|74181:inst1|73                                                         ; out0             ;
+; |ex1|alu:inst6|74181:inst1|48                                                               ; |ex1|alu:inst6|74181:inst1|48                                                         ; out0             ;
+; |ex1|alu:inst6|74181:inst1|18                                                               ; |ex1|alu:inst6|74181:inst1|18                                                         ; out0             ;
+; |ex1|alu:inst6|74181:inst1|71                                                               ; |ex1|alu:inst6|74181:inst1|71                                                         ; out0             ;
+; |ex1|alu:inst6|74181:inst1|17                                                               ; |ex1|alu:inst6|74181:inst1|17                                                         ; out0             ;
+; |ex1|alu:inst6|74181:inst1|82                                                               ; |ex1|alu:inst6|74181:inst1|82                                                         ; out0             ;
+; |ex1|alu:inst6|74181:inst1|55                                                               ; |ex1|alu:inst6|74181:inst1|55                                                         ; out0             ;
+; |ex1|alu:inst6|74181:inst1|75                                                               ; |ex1|alu:inst6|74181:inst1|75                                                         ; out0             ;
+; |ex1|alu:inst6|74181:inst1|67                                                               ; |ex1|alu:inst6|74181:inst1|67                                                         ; out0             ;
+; |ex1|alu:inst6|74181:inst1|69                                                               ; |ex1|alu:inst6|74181:inst1|69                                                         ; out0             ;
+; |ex1|alu:inst6|74181:inst1|80                                                               ; |ex1|alu:inst6|74181:inst1|80                                                         ; out0             ;
+; |ex1|alu:inst6|74181:inst1|53                                                               ; |ex1|alu:inst6|74181:inst1|53                                                         ; out0             ;
+; |ex1|alu:inst6|74181:inst1|64                                                               ; |ex1|alu:inst6|74181:inst1|64                                                         ; out0             ;
+; |ex1|alu:inst6|74181:inst|81                                                                ; |ex1|alu:inst6|74181:inst|81                                                          ; out0             ;
+; |ex1|alu:inst6|74181:inst|54                                                                ; |ex1|alu:inst6|74181:inst|54                                                          ; out0             ;
+; |ex1|alu:inst6|74181:inst|44                                                                ; |ex1|alu:inst6|74181:inst|44                                                          ; out0             ;
+; |ex1|alu:inst6|74181:inst|11                                                                ; |ex1|alu:inst6|74181:inst|11                                                          ; out0             ;
+; |ex1|alu:inst6|74181:inst|79                                                                ; |ex1|alu:inst6|74181:inst|79                                                          ; out0             ;
+; |ex1|alu:inst6|74181:inst|66                                                                ; |ex1|alu:inst6|74181:inst|66                                                          ; out0             ;
+; |ex1|alu:inst6|74181:inst|46                                                                ; |ex1|alu:inst6|74181:inst|46                                                          ; out0             ;
+; |ex1|alu:inst6|74181:inst|8                                                                 ; |ex1|alu:inst6|74181:inst|8                                                           ; out0             ;
+; |ex1|alu:inst6|74181:inst|7                                                                 ; |ex1|alu:inst6|74181:inst|7                                                           ; out0             ;
+; |ex1|alu:inst6|74181:inst|77                                                                ; |ex1|alu:inst6|74181:inst|77                                                          ; out0             ;
+; |ex1|alu:inst6|74181:inst|56                                                                ; |ex1|alu:inst6|74181:inst|56                                                          ; out0             ;
+; |ex1|alu:inst6|74181:inst|51                                                                ; |ex1|alu:inst6|74181:inst|51                                                          ; out0             ;
+; |ex1|alu:inst6|74181:inst|21                                                                ; |ex1|alu:inst6|74181:inst|21                                                          ; out0             ;
+; |ex1|alu:inst6|74181:inst|74                                                                ; |ex1|alu:inst6|74181:inst|74                                                          ; out0             ;
+; |ex1|alu:inst6|74181:inst|73                                                                ; |ex1|alu:inst6|74181:inst|73                                                          ; out0             ;
+; |ex1|alu:inst6|74181:inst|48                                                                ; |ex1|alu:inst6|74181:inst|48                                                          ; out0             ;
+; |ex1|alu:inst6|74181:inst|18                                                                ; |ex1|alu:inst6|74181:inst|18                                                          ; out0             ;
+; |ex1|alu:inst6|74181:inst|71                                                                ; |ex1|alu:inst6|74181:inst|71                                                          ; out0             ;
+; |ex1|alu:inst6|74181:inst|17                                                                ; |ex1|alu:inst6|74181:inst|17                                                          ; out0             ;
+; |ex1|alu:inst6|74181:inst|82                                                                ; |ex1|alu:inst6|74181:inst|82                                                          ; out0             ;
+; |ex1|alu:inst6|74181:inst|55                                                                ; |ex1|alu:inst6|74181:inst|55                                                          ; out0             ;
+; |ex1|alu:inst6|74181:inst|75                                                                ; |ex1|alu:inst6|74181:inst|75                                                          ; out0             ;
+; |ex1|alu:inst6|74181:inst|67                                                                ; |ex1|alu:inst6|74181:inst|67                                                          ; out0             ;
+; |ex1|alu:inst6|74181:inst|69                                                                ; |ex1|alu:inst6|74181:inst|69                                                          ; out0             ;
+; |ex1|alu:inst6|74181:inst|80                                                                ; |ex1|alu:inst6|74181:inst|80                                                          ; out0             ;
+; |ex1|alu:inst6|74181:inst|53                                                                ; |ex1|alu:inst6|74181:inst|53                                                          ; out0             ;
+; |ex1|alu:inst6|74181:inst|64                                                                ; |ex1|alu:inst6|74181:inst|64                                                          ; out0             ;
+; |ex1|alu:inst6|74181:inst|78                                                                ; |ex1|alu:inst6|74181:inst|78                                                          ; out0             ;
+; |ex1|alu:inst6|74181:inst|63                                                                ; |ex1|alu:inst6|74181:inst|63                                                          ; out0             ;
+; |ex1|alu:inst6|74181:inst|59                                                                ; |ex1|alu:inst6|74181:inst|59                                                          ; out0             ;
+; |ex1|alu:inst6|74181:inst|61                                                                ; |ex1|alu:inst6|74181:inst|61                                                          ; out0             ;
+; |ex1|alu:inst6|74273:inst4|19                                                               ; |ex1|alu:inst6|74273:inst4|19                                                         ; regout           ;
+; |ex1|alu:inst6|74273:inst4|18                                                               ; |ex1|alu:inst6|74273:inst4|18                                                         ; regout           ;
+; |ex1|alu:inst6|74273:inst4|17                                                               ; |ex1|alu:inst6|74273:inst4|17                                                         ; regout           ;
+; |ex1|alu:inst6|74273:inst4|16                                                               ; |ex1|alu:inst6|74273:inst4|16                                                         ; regout           ;
+; |ex1|alu:inst6|74273:inst4|15                                                               ; |ex1|alu:inst6|74273:inst4|15                                                         ; regout           ;
+; |ex1|alu:inst6|74273:inst4|14                                                               ; |ex1|alu:inst6|74273:inst4|14                                                         ; regout           ;
+; |ex1|alu:inst6|74273:inst4|13                                                               ; |ex1|alu:inst6|74273:inst4|13                                                         ; regout           ;
+; |ex1|alu:inst6|74273:inst4|12                                                               ; |ex1|alu:inst6|74273:inst4|12                                                         ; regout           ;
++---------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++--------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                               ;
++------------------------------------------+------------------------------------------+------------------+
+; Node Name                                ; Output Port Name                         ; Output Port Type ;
++------------------------------------------+------------------------------------------+------------------+
+; |ex1|upc:inst4|74161:inst|f74161:sub|110 ; |ex1|upc:inst4|74161:inst|f74161:sub|110 ; regout           ;
+; |ex1|upc:inst4|74161:inst|f74161:sub|107 ; |ex1|upc:inst4|74161:inst|f74161:sub|107 ; out0             ;
+; |ex1|upc:inst4|74161:inst|f74161:sub|106 ; |ex1|upc:inst4|74161:inst|f74161:sub|106 ; out0             ;
+; |ex1|upc:inst4|74161:inst|f74161:sub|94  ; |ex1|upc:inst4|74161:inst|f74161:sub|94  ; out0             ;
+; |ex1|upc:inst4|74161:inst|f74161:sub|99  ; |ex1|upc:inst4|74161:inst|f74161:sub|99  ; regout           ;
+; |ex1|upc:inst4|74161:inst|f74161:sub|97  ; |ex1|upc:inst4|74161:inst|f74161:sub|97  ; out0             ;
+; |ex1|upc:inst4|74161:inst|f74161:sub|96  ; |ex1|upc:inst4|74161:inst|f74161:sub|96  ; out0             ;
+; |ex1|upc:inst4|74161:inst|f74161:sub|84  ; |ex1|upc:inst4|74161:inst|f74161:sub|84  ; out0             ;
+; |ex1|upc:inst4|74161:inst|f74161:sub|87  ; |ex1|upc:inst4|74161:inst|f74161:sub|87  ; regout           ;
+; |ex1|upc:inst4|74161:inst|f74161:sub|90  ; |ex1|upc:inst4|74161:inst|f74161:sub|90  ; out0             ;
+; |ex1|upc:inst4|74161:inst|f74161:sub|89  ; |ex1|upc:inst4|74161:inst|f74161:sub|89  ; out0             ;
+; |ex1|alu:inst6|74181:inst1|47            ; |ex1|alu:inst6|74181:inst1|47            ; out0             ;
+; |ex1|alu:inst6|74181:inst1|14            ; |ex1|alu:inst6|74181:inst1|14            ; out0             ;
+; |ex1|alu:inst6|74181:inst1|13            ; |ex1|alu:inst6|74181:inst1|13            ; out0             ;
+; |ex1|alu:inst6|74181:inst1|12            ; |ex1|alu:inst6|74181:inst1|12            ; out0             ;
+; |ex1|alu:inst6|74181:inst1|9             ; |ex1|alu:inst6|74181:inst1|9             ; out0             ;
+; |ex1|alu:inst6|74181:inst1|65            ; |ex1|alu:inst6|74181:inst1|65            ; out0             ;
+; |ex1|alu:inst6|74181:inst1|6             ; |ex1|alu:inst6|74181:inst1|6             ; out0             ;
+; |ex1|alu:inst6|74181:inst1|52            ; |ex1|alu:inst6|74181:inst1|52            ; out0             ;
+; |ex1|alu:inst6|74181:inst1|24            ; |ex1|alu:inst6|74181:inst1|24            ; out0             ;
+; |ex1|alu:inst6|74181:inst1|23            ; |ex1|alu:inst6|74181:inst1|23            ; out0             ;
+; |ex1|alu:inst6|74181:inst1|22            ; |ex1|alu:inst6|74181:inst1|22            ; out0             ;
+; |ex1|alu:inst6|74181:inst1|19            ; |ex1|alu:inst6|74181:inst1|19            ; out0             ;
+; |ex1|alu:inst6|74181:inst1|72            ; |ex1|alu:inst6|74181:inst1|72            ; out0             ;
+; |ex1|alu:inst6|74181:inst1|70            ; |ex1|alu:inst6|74181:inst1|70            ; out0             ;
+; |ex1|alu:inst6|74181:inst1|16            ; |ex1|alu:inst6|74181:inst1|16            ; out0             ;
+; |ex1|alu:inst6|74181:inst1|68            ; |ex1|alu:inst6|74181:inst1|68            ; out0             ;
+; |ex1|alu:inst6|74273:inst2|18            ; |ex1|alu:inst6|74273:inst2|18            ; regout           ;
+; |ex1|alu:inst6|74273:inst2|16            ; |ex1|alu:inst6|74273:inst2|16            ; regout           ;
+; |ex1|alu:inst6|74273:inst2|14            ; |ex1|alu:inst6|74273:inst2|14            ; regout           ;
+; |ex1|alu:inst6|74273:inst2|12            ; |ex1|alu:inst6|74273:inst2|12            ; regout           ;
+; |ex1|alu:inst6|74273:inst3|19            ; |ex1|alu:inst6|74273:inst3|19            ; regout           ;
+; |ex1|alu:inst6|74273:inst3|17            ; |ex1|alu:inst6|74273:inst3|17            ; regout           ;
+; |ex1|alu:inst6|74273:inst3|15            ; |ex1|alu:inst6|74273:inst3|15            ; regout           ;
+; |ex1|alu:inst6|74273:inst3|13            ; |ex1|alu:inst6|74273:inst3|13            ; regout           ;
+; |ex1|alu:inst6|74181:inst|47             ; |ex1|alu:inst6|74181:inst|47             ; out0             ;
+; |ex1|alu:inst6|74181:inst|14             ; |ex1|alu:inst6|74181:inst|14             ; out0             ;
+; |ex1|alu:inst6|74181:inst|13             ; |ex1|alu:inst6|74181:inst|13             ; out0             ;
+; |ex1|alu:inst6|74181:inst|12             ; |ex1|alu:inst6|74181:inst|12             ; out0             ;
+; |ex1|alu:inst6|74181:inst|9              ; |ex1|alu:inst6|74181:inst|9              ; out0             ;
+; |ex1|alu:inst6|74181:inst|65             ; |ex1|alu:inst6|74181:inst|65             ; out0             ;
+; |ex1|alu:inst6|74181:inst|6              ; |ex1|alu:inst6|74181:inst|6              ; out0             ;
+; |ex1|alu:inst6|74181:inst|52             ; |ex1|alu:inst6|74181:inst|52             ; out0             ;
+; |ex1|alu:inst6|74181:inst|24             ; |ex1|alu:inst6|74181:inst|24             ; out0             ;
+; |ex1|alu:inst6|74181:inst|23             ; |ex1|alu:inst6|74181:inst|23             ; out0             ;
+; |ex1|alu:inst6|74181:inst|22             ; |ex1|alu:inst6|74181:inst|22             ; out0             ;
+; |ex1|alu:inst6|74181:inst|19             ; |ex1|alu:inst6|74181:inst|19             ; out0             ;
+; |ex1|alu:inst6|74181:inst|72             ; |ex1|alu:inst6|74181:inst|72             ; out0             ;
+; |ex1|alu:inst6|74181:inst|70             ; |ex1|alu:inst6|74181:inst|70             ; out0             ;
+; |ex1|alu:inst6|74181:inst|16             ; |ex1|alu:inst6|74181:inst|16             ; out0             ;
+; |ex1|alu:inst6|74181:inst|68             ; |ex1|alu:inst6|74181:inst|68             ; out0             ;
+; |ex1|alu:inst6|74181:inst|58             ; |ex1|alu:inst6|74181:inst|58             ; out0             ;
+; |ex1|alu:inst6|74181:inst|62             ; |ex1|alu:inst6|74181:inst|62             ; out0             ;
++------------------------------------------+------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++--------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                               ;
++------------------------------------------+------------------------------------------+------------------+
+; Node Name                                ; Output Port Name                         ; Output Port Type ;
++------------------------------------------+------------------------------------------+------------------+
+; |ex1|upc:inst4|74161:inst|f74161:sub|110 ; |ex1|upc:inst4|74161:inst|f74161:sub|110 ; regout           ;
+; |ex1|upc:inst4|74161:inst|f74161:sub|107 ; |ex1|upc:inst4|74161:inst|f74161:sub|107 ; out0             ;
+; |ex1|upc:inst4|74161:inst|f74161:sub|106 ; |ex1|upc:inst4|74161:inst|f74161:sub|106 ; out0             ;
+; |ex1|upc:inst4|74161:inst|f74161:sub|94  ; |ex1|upc:inst4|74161:inst|f74161:sub|94  ; out0             ;
+; |ex1|upc:inst4|74161:inst|f74161:sub|99  ; |ex1|upc:inst4|74161:inst|f74161:sub|99  ; regout           ;
+; |ex1|upc:inst4|74161:inst|f74161:sub|97  ; |ex1|upc:inst4|74161:inst|f74161:sub|97  ; out0             ;
+; |ex1|upc:inst4|74161:inst|f74161:sub|96  ; |ex1|upc:inst4|74161:inst|f74161:sub|96  ; out0             ;
+; |ex1|upc:inst4|74161:inst|f74161:sub|84  ; |ex1|upc:inst4|74161:inst|f74161:sub|84  ; out0             ;
+; |ex1|upc:inst4|74161:inst|f74161:sub|87  ; |ex1|upc:inst4|74161:inst|f74161:sub|87  ; regout           ;
+; |ex1|upc:inst4|74161:inst|f74161:sub|90  ; |ex1|upc:inst4|74161:inst|f74161:sub|90  ; out0             ;
+; |ex1|upc:inst4|74161:inst|f74161:sub|89  ; |ex1|upc:inst4|74161:inst|f74161:sub|89  ; out0             ;
+; |ex1|alu:inst6|74181:inst1|47            ; |ex1|alu:inst6|74181:inst1|47            ; out0             ;
+; |ex1|alu:inst6|74181:inst1|14            ; |ex1|alu:inst6|74181:inst1|14            ; out0             ;
+; |ex1|alu:inst6|74181:inst1|13            ; |ex1|alu:inst6|74181:inst1|13            ; out0             ;
+; |ex1|alu:inst6|74181:inst1|12            ; |ex1|alu:inst6|74181:inst1|12            ; out0             ;
+; |ex1|alu:inst6|74181:inst1|9             ; |ex1|alu:inst6|74181:inst1|9             ; out0             ;
+; |ex1|alu:inst6|74181:inst1|43            ; |ex1|alu:inst6|74181:inst1|43            ; out0             ;
+; |ex1|alu:inst6|74181:inst1|6             ; |ex1|alu:inst6|74181:inst1|6             ; out0             ;
+; |ex1|alu:inst6|74181:inst1|52            ; |ex1|alu:inst6|74181:inst1|52            ; out0             ;
+; |ex1|alu:inst6|74181:inst1|24            ; |ex1|alu:inst6|74181:inst1|24            ; out0             ;
+; |ex1|alu:inst6|74181:inst1|23            ; |ex1|alu:inst6|74181:inst1|23            ; out0             ;
+; |ex1|alu:inst6|74181:inst1|22            ; |ex1|alu:inst6|74181:inst1|22            ; out0             ;
+; |ex1|alu:inst6|74181:inst1|19            ; |ex1|alu:inst6|74181:inst1|19            ; out0             ;
+; |ex1|alu:inst6|74181:inst1|45            ; |ex1|alu:inst6|74181:inst1|45            ; out0             ;
+; |ex1|alu:inst6|74181:inst1|16            ; |ex1|alu:inst6|74181:inst1|16            ; out0             ;
+; |ex1|alu:inst6|74273:inst2|19            ; |ex1|alu:inst6|74273:inst2|19            ; regout           ;
+; |ex1|alu:inst6|74273:inst2|18            ; |ex1|alu:inst6|74273:inst2|18            ; regout           ;
+; |ex1|alu:inst6|74273:inst2|17            ; |ex1|alu:inst6|74273:inst2|17            ; regout           ;
+; |ex1|alu:inst6|74273:inst2|16            ; |ex1|alu:inst6|74273:inst2|16            ; regout           ;
+; |ex1|alu:inst6|74273:inst2|15            ; |ex1|alu:inst6|74273:inst2|15            ; regout           ;
+; |ex1|alu:inst6|74273:inst2|14            ; |ex1|alu:inst6|74273:inst2|14            ; regout           ;
+; |ex1|alu:inst6|74273:inst2|13            ; |ex1|alu:inst6|74273:inst2|13            ; regout           ;
+; |ex1|alu:inst6|74273:inst2|12            ; |ex1|alu:inst6|74273:inst2|12            ; regout           ;
+; |ex1|alu:inst6|74273:inst3|19            ; |ex1|alu:inst6|74273:inst3|19            ; regout           ;
+; |ex1|alu:inst6|74273:inst3|18            ; |ex1|alu:inst6|74273:inst3|18            ; regout           ;
+; |ex1|alu:inst6|74273:inst3|17            ; |ex1|alu:inst6|74273:inst3|17            ; regout           ;
+; |ex1|alu:inst6|74273:inst3|16            ; |ex1|alu:inst6|74273:inst3|16            ; regout           ;
+; |ex1|alu:inst6|74273:inst3|15            ; |ex1|alu:inst6|74273:inst3|15            ; regout           ;
+; |ex1|alu:inst6|74273:inst3|14            ; |ex1|alu:inst6|74273:inst3|14            ; regout           ;
+; |ex1|alu:inst6|74273:inst3|13            ; |ex1|alu:inst6|74273:inst3|13            ; regout           ;
+; |ex1|alu:inst6|74273:inst3|12            ; |ex1|alu:inst6|74273:inst3|12            ; regout           ;
+; |ex1|alu:inst6|74181:inst|47             ; |ex1|alu:inst6|74181:inst|47             ; out0             ;
+; |ex1|alu:inst6|74181:inst|14             ; |ex1|alu:inst6|74181:inst|14             ; out0             ;
+; |ex1|alu:inst6|74181:inst|13             ; |ex1|alu:inst6|74181:inst|13             ; out0             ;
+; |ex1|alu:inst6|74181:inst|12             ; |ex1|alu:inst6|74181:inst|12             ; out0             ;
+; |ex1|alu:inst6|74181:inst|9              ; |ex1|alu:inst6|74181:inst|9              ; out0             ;
+; |ex1|alu:inst6|74181:inst|43             ; |ex1|alu:inst6|74181:inst|43             ; out0             ;
+; |ex1|alu:inst6|74181:inst|6              ; |ex1|alu:inst6|74181:inst|6              ; out0             ;
+; |ex1|alu:inst6|74181:inst|52             ; |ex1|alu:inst6|74181:inst|52             ; out0             ;
+; |ex1|alu:inst6|74181:inst|24             ; |ex1|alu:inst6|74181:inst|24             ; out0             ;
+; |ex1|alu:inst6|74181:inst|23             ; |ex1|alu:inst6|74181:inst|23             ; out0             ;
+; |ex1|alu:inst6|74181:inst|22             ; |ex1|alu:inst6|74181:inst|22             ; out0             ;
+; |ex1|alu:inst6|74181:inst|19             ; |ex1|alu:inst6|74181:inst|19             ; out0             ;
+; |ex1|alu:inst6|74181:inst|45             ; |ex1|alu:inst6|74181:inst|45             ; out0             ;
+; |ex1|alu:inst6|74181:inst|16             ; |ex1|alu:inst6|74181:inst|16             ; out0             ;
++------------------------------------------+------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 13.0.0 Build 156 04/24/2013 SJ Full Version
+    Info: Processing started: Mon Oct 14 19:57:46 2024
+Info: Command: quartus_sim --simulation_results_format=VWF ex1 -c ex1_qsim
+Info (324025): Using vector source file "C:/Users/wyc/Desktop/Computer Design/keshe-ex1/ex1/Waveform2.vwf"
+Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info (310002): Simulation partitioned into 1 sub-simulations
+Info (328053): Simulation coverage is      63.07 %
+Info (328052): Number of transitions in simulation is 1819
+Info (324045): Vector file ex1_qsim.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4452 megabytes
+    Info: Processing ended: Mon Oct 14 19:57:47 2024
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
+
+

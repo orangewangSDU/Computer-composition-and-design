@@ -1,0 +1,2085 @@
+|ALU
+F[0] <= inst51.DB_MAX_OUTPUT_PORT_TYPE
+F[1] <= inst52.DB_MAX_OUTPUT_PORT_TYPE
+F[2] <= inst53.DB_MAX_OUTPUT_PORT_TYPE
+F[3] <= inst54.DB_MAX_OUTPUT_PORT_TYPE
+F[4] <= inst55.DB_MAX_OUTPUT_PORT_TYPE
+F[5] <= inst56.DB_MAX_OUTPUT_PORT_TYPE
+F[6] <= inst57.DB_MAX_OUTPUT_PORT_TYPE
+F[7] <= inst58.DB_MAX_OUTPUT_PORT_TYPE
+S7 => inst50.IN0
+S7 => inst33.IN0
+S7 => inst34.IN0
+S7 => inst35.IN0
+S7 => inst36.IN0
+S7 => inst37.IN0
+S7 => inst38.IN0
+S7 => inst39.IN0
+S7 => inst40.IN0
+B[0] => 74181:inst1.B0N
+B[0] => multiply:inst41.B0
+B[0] => shift:inst4.B1
+B[1] => 74181:inst1.B1N
+B[1] => multiply:inst41.B1
+B[1] => shift:inst4.B2
+B[2] => 74181:inst1.B2N
+B[2] => multiply:inst41.B2
+B[2] => shift:inst4.B3
+B[3] => 74181:inst1.B3N
+B[3] => multiply:inst41.B3
+B[3] => shift:inst4.B4
+B[4] => multiply:inst41.B4
+B[4] => shift:inst4.B5
+B[4] => 74181:inst.B0N
+B[5] => multiply:inst41.B5
+B[5] => shift:inst4.B6
+B[5] => 74181:inst.B1N
+B[6] => multiply:inst41.B6
+B[6] => shift:inst4.B7
+B[6] => 74181:inst.B2N
+B[7] => multiply:inst41.B7
+B[7] => shift:inst4.B8
+B[7] => 74181:inst.B3N
+A[0] => 74181:inst1.A0N
+A[0] => multiply:inst41.A0
+A[0] => shift:inst4.A1
+A[1] => 74181:inst1.A1N
+A[1] => multiply:inst41.A1
+A[1] => shift:inst4.A2
+A[2] => 74181:inst1.A2N
+A[2] => multiply:inst41.A2
+A[2] => shift:inst4.A3
+A[3] => 74181:inst1.A3N
+A[3] => multiply:inst41.A3
+A[3] => shift:inst4.A4
+A[4] => multiply:inst41.A4
+A[4] => shift:inst4.A5
+A[4] => 74181:inst.A0N
+A[5] => multiply:inst41.A5
+A[5] => shift:inst4.A6
+A[5] => 74181:inst.A1N
+A[6] => multiply:inst41.A6
+A[6] => shift:inst4.A7
+A[6] => 74181:inst.A2N
+A[7] => multiply:inst41.A7
+A[7] => shift:inst4.A8
+A[7] => 74181:inst.A3N
+M => 74181:inst1.M
+M => 74181:inst.M
+C0 => 74181:inst1.CN
+C0 => 74182:inst2.CI
+S2 => 74181:inst1.S2
+S2 => 74181:inst.S2
+S1 => 74181:inst1.S1
+S1 => 74181:inst.S1
+S0 => 74181:inst1.S0
+S0 => 74181:inst.S0
+S3 => 74181:inst1.S3
+S3 => 74181:inst.S3
+S4 => inst29.IN0
+S6 => shift:inst4.CHOOSE
+S5 => inst31.IN0
+S5 => shift:inst4.LM
+
+
+|ALU|74181:inst1
+F1N <= 86.DB_MAX_OUTPUT_PORT_TYPE
+A1N => 14.IN0
+A1N => 13.IN2
+A1N => 44.IN0
+S3 => 14.IN1
+S3 => 9.IN1
+S3 => 24.IN1
+S3 => 19.IN1
+B1N => 14.IN2
+B1N => 28.IN0
+B1N => 11.IN1
+S2 => 13.IN1
+S2 => 8.IN1
+S2 => 23.IN1
+S2 => 18.IN1
+S0 => 11.IN0
+S0 => 6.IN0
+S0 => 21.IN0
+S0 => 16.IN0
+S1 => 12.IN1
+S1 => 7.IN1
+S1 => 22.IN1
+S1 => 17.IN1
+M => 98.IN0
+A0N => 9.IN0
+A0N => 8.IN2
+A0N => 43.IN0
+B0N => 9.IN2
+B0N => 27.IN0
+B0N => 6.IN1
+CN => 66.IN2
+CN => 73.IN0
+CN => 73.IN3
+CN => 69.IN0
+CN => 64.IN0
+CN => 61.IN4
+CN => 61.IN5
+AEQB <= 83.DB_MAX_OUTPUT_PORT_TYPE
+A3N => 24.IN0
+A3N => 23.IN2
+A3N => 51.IN0
+B3N => 24.IN2
+B3N => 25.IN0
+B3N => 21.IN1
+A2N => 19.IN0
+A2N => 18.IN2
+A2N => 45.IN0
+B2N => 19.IN2
+B2N => 31.IN0
+B2N => 16.IN1
+F2N <= 85.DB_MAX_OUTPUT_PORT_TYPE
+F3N <= 84.DB_MAX_OUTPUT_PORT_TYPE
+PN <= 60.DB_MAX_OUTPUT_PORT_TYPE
+CN4 <= 78.DB_MAX_OUTPUT_PORT_TYPE
+GN <= 63.DB_MAX_OUTPUT_PORT_TYPE
+F0N <= 87.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|multiply:inst41
+qq7 <= danyuan:inst51.partout
+A0 => danyuan:inst21.xi
+B0 => danyuan:inst21.yi
+B1 => danyuan:inst25.yi
+A1 => danyuan:inst20.xi
+B2 => danyuan:inst29.yi
+A2 => danyuan:inst19.xi
+B3 => danyuan:inst33.yi
+A3 => danyuan:inst18.xi
+B4 => danyuan:inst37.yi
+A4 => danyuan:inst.xi
+B5 => danyuan:inst35.yi
+A5 => danyuan:inst7.xi
+B6 => danyuan:inst53.yi
+A6 => danyuan:inst11.xi
+B7 => danyuan:inst51.yi
+A7 => danyuan:inst15.xi
+qq6 <= danyuan:inst53.partout
+qq5 <= danyuan:inst35.partout
+qq4 <= danyuan:inst37.partout
+qq3 <= danyuan:inst33.partout
+qq2 <= danyuan:inst29.partout
+qq1 <= danyuan:inst25.partout
+qq0 <= danyuan:inst21.partout
+
+
+|ALU|multiply:inst41|danyuan:inst51
+xxi <= xi.DB_MAX_OUTPUT_PORT_TYPE
+xi => xxi.DATAIN
+xi => inst1.IN0
+yyi <= yi.DB_MAX_OUTPUT_PORT_TYPE
+yi => yyi.DATAIN
+yi => inst1.IN1
+cout <= allplus:inst.co
+partji => allplus:inst.b
+ccin => allplus:inst.cin
+partout <= allplus:inst.s
+
+
+|ALU|multiply:inst41|danyuan:inst51|allplus:inst
+s <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst3.IN0
+a => inst2.IN0
+b => inst.IN1
+b => inst4.IN0
+b => inst2.IN1
+cin => inst1.IN1
+cin => inst3.IN1
+cin => inst4.IN1
+co <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|multiply:inst41|danyuan:inst53
+xxi <= xi.DB_MAX_OUTPUT_PORT_TYPE
+xi => xxi.DATAIN
+xi => inst1.IN0
+yyi <= yi.DB_MAX_OUTPUT_PORT_TYPE
+yi => yyi.DATAIN
+yi => inst1.IN1
+cout <= allplus:inst.co
+partji => allplus:inst.b
+ccin => allplus:inst.cin
+partout <= allplus:inst.s
+
+
+|ALU|multiply:inst41|danyuan:inst53|allplus:inst
+s <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst3.IN0
+a => inst2.IN0
+b => inst.IN1
+b => inst4.IN0
+b => inst2.IN1
+cin => inst1.IN1
+cin => inst3.IN1
+cin => inst4.IN1
+co <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|multiply:inst41|danyuan:inst35
+xxi <= xi.DB_MAX_OUTPUT_PORT_TYPE
+xi => xxi.DATAIN
+xi => inst1.IN0
+yyi <= yi.DB_MAX_OUTPUT_PORT_TYPE
+yi => yyi.DATAIN
+yi => inst1.IN1
+cout <= allplus:inst.co
+partji => allplus:inst.b
+ccin => allplus:inst.cin
+partout <= allplus:inst.s
+
+
+|ALU|multiply:inst41|danyuan:inst35|allplus:inst
+s <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst3.IN0
+a => inst2.IN0
+b => inst.IN1
+b => inst4.IN0
+b => inst2.IN1
+cin => inst1.IN1
+cin => inst3.IN1
+cin => inst4.IN1
+co <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|multiply:inst41|danyuan:inst37
+xxi <= xi.DB_MAX_OUTPUT_PORT_TYPE
+xi => xxi.DATAIN
+xi => inst1.IN0
+yyi <= yi.DB_MAX_OUTPUT_PORT_TYPE
+yi => yyi.DATAIN
+yi => inst1.IN1
+cout <= allplus:inst.co
+partji => allplus:inst.b
+ccin => allplus:inst.cin
+partout <= allplus:inst.s
+
+
+|ALU|multiply:inst41|danyuan:inst37|allplus:inst
+s <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst3.IN0
+a => inst2.IN0
+b => inst.IN1
+b => inst4.IN0
+b => inst2.IN1
+cin => inst1.IN1
+cin => inst3.IN1
+cin => inst4.IN1
+co <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|multiply:inst41|danyuan:inst33
+xxi <= xi.DB_MAX_OUTPUT_PORT_TYPE
+xi => xxi.DATAIN
+xi => inst1.IN0
+yyi <= yi.DB_MAX_OUTPUT_PORT_TYPE
+yi => yyi.DATAIN
+yi => inst1.IN1
+cout <= allplus:inst.co
+partji => allplus:inst.b
+ccin => allplus:inst.cin
+partout <= allplus:inst.s
+
+
+|ALU|multiply:inst41|danyuan:inst33|allplus:inst
+s <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst3.IN0
+a => inst2.IN0
+b => inst.IN1
+b => inst4.IN0
+b => inst2.IN1
+cin => inst1.IN1
+cin => inst3.IN1
+cin => inst4.IN1
+co <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|multiply:inst41|danyuan:inst29
+xxi <= xi.DB_MAX_OUTPUT_PORT_TYPE
+xi => xxi.DATAIN
+xi => inst1.IN0
+yyi <= yi.DB_MAX_OUTPUT_PORT_TYPE
+yi => yyi.DATAIN
+yi => inst1.IN1
+cout <= allplus:inst.co
+partji => allplus:inst.b
+ccin => allplus:inst.cin
+partout <= allplus:inst.s
+
+
+|ALU|multiply:inst41|danyuan:inst29|allplus:inst
+s <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst3.IN0
+a => inst2.IN0
+b => inst.IN1
+b => inst4.IN0
+b => inst2.IN1
+cin => inst1.IN1
+cin => inst3.IN1
+cin => inst4.IN1
+co <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|multiply:inst41|danyuan:inst25
+xxi <= xi.DB_MAX_OUTPUT_PORT_TYPE
+xi => xxi.DATAIN
+xi => inst1.IN0
+yyi <= yi.DB_MAX_OUTPUT_PORT_TYPE
+yi => yyi.DATAIN
+yi => inst1.IN1
+cout <= allplus:inst.co
+partji => allplus:inst.b
+ccin => allplus:inst.cin
+partout <= allplus:inst.s
+
+
+|ALU|multiply:inst41|danyuan:inst25|allplus:inst
+s <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst3.IN0
+a => inst2.IN0
+b => inst.IN1
+b => inst4.IN0
+b => inst2.IN1
+cin => inst1.IN1
+cin => inst3.IN1
+cin => inst4.IN1
+co <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|multiply:inst41|danyuan:inst21
+xxi <= xi.DB_MAX_OUTPUT_PORT_TYPE
+xi => xxi.DATAIN
+xi => inst1.IN0
+yyi <= yi.DB_MAX_OUTPUT_PORT_TYPE
+yi => yyi.DATAIN
+yi => inst1.IN1
+cout <= allplus:inst.co
+partji => allplus:inst.b
+ccin => allplus:inst.cin
+partout <= allplus:inst.s
+
+
+|ALU|multiply:inst41|danyuan:inst21|allplus:inst
+s <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst3.IN0
+a => inst2.IN0
+b => inst.IN1
+b => inst4.IN0
+b => inst2.IN1
+cin => inst1.IN1
+cin => inst3.IN1
+cin => inst4.IN1
+co <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|multiply:inst41|danyuan:inst20
+xxi <= xi.DB_MAX_OUTPUT_PORT_TYPE
+xi => xxi.DATAIN
+xi => inst1.IN0
+yyi <= yi.DB_MAX_OUTPUT_PORT_TYPE
+yi => yyi.DATAIN
+yi => inst1.IN1
+cout <= allplus:inst.co
+partji => allplus:inst.b
+ccin => allplus:inst.cin
+partout <= allplus:inst.s
+
+
+|ALU|multiply:inst41|danyuan:inst20|allplus:inst
+s <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst3.IN0
+a => inst2.IN0
+b => inst.IN1
+b => inst4.IN0
+b => inst2.IN1
+cin => inst1.IN1
+cin => inst3.IN1
+cin => inst4.IN1
+co <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|multiply:inst41|danyuan:inst24
+xxi <= xi.DB_MAX_OUTPUT_PORT_TYPE
+xi => xxi.DATAIN
+xi => inst1.IN0
+yyi <= yi.DB_MAX_OUTPUT_PORT_TYPE
+yi => yyi.DATAIN
+yi => inst1.IN1
+cout <= allplus:inst.co
+partji => allplus:inst.b
+ccin => allplus:inst.cin
+partout <= allplus:inst.s
+
+
+|ALU|multiply:inst41|danyuan:inst24|allplus:inst
+s <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst3.IN0
+a => inst2.IN0
+b => inst.IN1
+b => inst4.IN0
+b => inst2.IN1
+cin => inst1.IN1
+cin => inst3.IN1
+cin => inst4.IN1
+co <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|multiply:inst41|danyuan:inst19
+xxi <= xi.DB_MAX_OUTPUT_PORT_TYPE
+xi => xxi.DATAIN
+xi => inst1.IN0
+yyi <= yi.DB_MAX_OUTPUT_PORT_TYPE
+yi => yyi.DATAIN
+yi => inst1.IN1
+cout <= allplus:inst.co
+partji => allplus:inst.b
+ccin => allplus:inst.cin
+partout <= allplus:inst.s
+
+
+|ALU|multiply:inst41|danyuan:inst19|allplus:inst
+s <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst3.IN0
+a => inst2.IN0
+b => inst.IN1
+b => inst4.IN0
+b => inst2.IN1
+cin => inst1.IN1
+cin => inst3.IN1
+cin => inst4.IN1
+co <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|multiply:inst41|danyuan:inst28
+xxi <= xi.DB_MAX_OUTPUT_PORT_TYPE
+xi => xxi.DATAIN
+xi => inst1.IN0
+yyi <= yi.DB_MAX_OUTPUT_PORT_TYPE
+yi => yyi.DATAIN
+yi => inst1.IN1
+cout <= allplus:inst.co
+partji => allplus:inst.b
+ccin => allplus:inst.cin
+partout <= allplus:inst.s
+
+
+|ALU|multiply:inst41|danyuan:inst28|allplus:inst
+s <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst3.IN0
+a => inst2.IN0
+b => inst.IN1
+b => inst4.IN0
+b => inst2.IN1
+cin => inst1.IN1
+cin => inst3.IN1
+cin => inst4.IN1
+co <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|multiply:inst41|danyuan:inst23
+xxi <= xi.DB_MAX_OUTPUT_PORT_TYPE
+xi => xxi.DATAIN
+xi => inst1.IN0
+yyi <= yi.DB_MAX_OUTPUT_PORT_TYPE
+yi => yyi.DATAIN
+yi => inst1.IN1
+cout <= allplus:inst.co
+partji => allplus:inst.b
+ccin => allplus:inst.cin
+partout <= allplus:inst.s
+
+
+|ALU|multiply:inst41|danyuan:inst23|allplus:inst
+s <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst3.IN0
+a => inst2.IN0
+b => inst.IN1
+b => inst4.IN0
+b => inst2.IN1
+cin => inst1.IN1
+cin => inst3.IN1
+cin => inst4.IN1
+co <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|multiply:inst41|danyuan:inst18
+xxi <= xi.DB_MAX_OUTPUT_PORT_TYPE
+xi => xxi.DATAIN
+xi => inst1.IN0
+yyi <= yi.DB_MAX_OUTPUT_PORT_TYPE
+yi => yyi.DATAIN
+yi => inst1.IN1
+cout <= allplus:inst.co
+partji => allplus:inst.b
+ccin => allplus:inst.cin
+partout <= allplus:inst.s
+
+
+|ALU|multiply:inst41|danyuan:inst18|allplus:inst
+s <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst3.IN0
+a => inst2.IN0
+b => inst.IN1
+b => inst4.IN0
+b => inst2.IN1
+cin => inst1.IN1
+cin => inst3.IN1
+cin => inst4.IN1
+co <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|multiply:inst41|danyuan:inst32
+xxi <= xi.DB_MAX_OUTPUT_PORT_TYPE
+xi => xxi.DATAIN
+xi => inst1.IN0
+yyi <= yi.DB_MAX_OUTPUT_PORT_TYPE
+yi => yyi.DATAIN
+yi => inst1.IN1
+cout <= allplus:inst.co
+partji => allplus:inst.b
+ccin => allplus:inst.cin
+partout <= allplus:inst.s
+
+
+|ALU|multiply:inst41|danyuan:inst32|allplus:inst
+s <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst3.IN0
+a => inst2.IN0
+b => inst.IN1
+b => inst4.IN0
+b => inst2.IN1
+cin => inst1.IN1
+cin => inst3.IN1
+cin => inst4.IN1
+co <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|multiply:inst41|danyuan:inst27
+xxi <= xi.DB_MAX_OUTPUT_PORT_TYPE
+xi => xxi.DATAIN
+xi => inst1.IN0
+yyi <= yi.DB_MAX_OUTPUT_PORT_TYPE
+yi => yyi.DATAIN
+yi => inst1.IN1
+cout <= allplus:inst.co
+partji => allplus:inst.b
+ccin => allplus:inst.cin
+partout <= allplus:inst.s
+
+
+|ALU|multiply:inst41|danyuan:inst27|allplus:inst
+s <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst3.IN0
+a => inst2.IN0
+b => inst.IN1
+b => inst4.IN0
+b => inst2.IN1
+cin => inst1.IN1
+cin => inst3.IN1
+cin => inst4.IN1
+co <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|multiply:inst41|danyuan:inst22
+xxi <= xi.DB_MAX_OUTPUT_PORT_TYPE
+xi => xxi.DATAIN
+xi => inst1.IN0
+yyi <= yi.DB_MAX_OUTPUT_PORT_TYPE
+yi => yyi.DATAIN
+yi => inst1.IN1
+cout <= allplus:inst.co
+partji => allplus:inst.b
+ccin => allplus:inst.cin
+partout <= allplus:inst.s
+
+
+|ALU|multiply:inst41|danyuan:inst22|allplus:inst
+s <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst3.IN0
+a => inst2.IN0
+b => inst.IN1
+b => inst4.IN0
+b => inst2.IN1
+cin => inst1.IN1
+cin => inst3.IN1
+cin => inst4.IN1
+co <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|multiply:inst41|danyuan:inst
+xxi <= xi.DB_MAX_OUTPUT_PORT_TYPE
+xi => xxi.DATAIN
+xi => inst1.IN0
+yyi <= yi.DB_MAX_OUTPUT_PORT_TYPE
+yi => yyi.DATAIN
+yi => inst1.IN1
+cout <= allplus:inst.co
+partji => allplus:inst.b
+ccin => allplus:inst.cin
+partout <= allplus:inst.s
+
+
+|ALU|multiply:inst41|danyuan:inst|allplus:inst
+s <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst3.IN0
+a => inst2.IN0
+b => inst.IN1
+b => inst4.IN0
+b => inst2.IN1
+cin => inst1.IN1
+cin => inst3.IN1
+cin => inst4.IN1
+co <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|multiply:inst41|danyuan:inst41
+xxi <= xi.DB_MAX_OUTPUT_PORT_TYPE
+xi => xxi.DATAIN
+xi => inst1.IN0
+yyi <= yi.DB_MAX_OUTPUT_PORT_TYPE
+yi => yyi.DATAIN
+yi => inst1.IN1
+cout <= allplus:inst.co
+partji => allplus:inst.b
+ccin => allplus:inst.cin
+partout <= allplus:inst.s
+
+
+|ALU|multiply:inst41|danyuan:inst41|allplus:inst
+s <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst3.IN0
+a => inst2.IN0
+b => inst.IN1
+b => inst4.IN0
+b => inst2.IN1
+cin => inst1.IN1
+cin => inst3.IN1
+cin => inst4.IN1
+co <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|multiply:inst41|danyuan:inst31
+xxi <= xi.DB_MAX_OUTPUT_PORT_TYPE
+xi => xxi.DATAIN
+xi => inst1.IN0
+yyi <= yi.DB_MAX_OUTPUT_PORT_TYPE
+yi => yyi.DATAIN
+yi => inst1.IN1
+cout <= allplus:inst.co
+partji => allplus:inst.b
+ccin => allplus:inst.cin
+partout <= allplus:inst.s
+
+
+|ALU|multiply:inst41|danyuan:inst31|allplus:inst
+s <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst3.IN0
+a => inst2.IN0
+b => inst.IN1
+b => inst4.IN0
+b => inst2.IN1
+cin => inst1.IN1
+cin => inst3.IN1
+cin => inst4.IN1
+co <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|multiply:inst41|danyuan:inst26
+xxi <= xi.DB_MAX_OUTPUT_PORT_TYPE
+xi => xxi.DATAIN
+xi => inst1.IN0
+yyi <= yi.DB_MAX_OUTPUT_PORT_TYPE
+yi => yyi.DATAIN
+yi => inst1.IN1
+cout <= allplus:inst.co
+partji => allplus:inst.b
+ccin => allplus:inst.cin
+partout <= allplus:inst.s
+
+
+|ALU|multiply:inst41|danyuan:inst26|allplus:inst
+s <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst3.IN0
+a => inst2.IN0
+b => inst.IN1
+b => inst4.IN0
+b => inst2.IN1
+cin => inst1.IN1
+cin => inst3.IN1
+cin => inst4.IN1
+co <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|multiply:inst41|danyuan:inst3
+xxi <= xi.DB_MAX_OUTPUT_PORT_TYPE
+xi => xxi.DATAIN
+xi => inst1.IN0
+yyi <= yi.DB_MAX_OUTPUT_PORT_TYPE
+yi => yyi.DATAIN
+yi => inst1.IN1
+cout <= allplus:inst.co
+partji => allplus:inst.b
+ccin => allplus:inst.cin
+partout <= allplus:inst.s
+
+
+|ALU|multiply:inst41|danyuan:inst3|allplus:inst
+s <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst3.IN0
+a => inst2.IN0
+b => inst.IN1
+b => inst4.IN0
+b => inst2.IN1
+cin => inst1.IN1
+cin => inst3.IN1
+cin => inst4.IN1
+co <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|multiply:inst41|danyuan:inst7
+xxi <= xi.DB_MAX_OUTPUT_PORT_TYPE
+xi => xxi.DATAIN
+xi => inst1.IN0
+yyi <= yi.DB_MAX_OUTPUT_PORT_TYPE
+yi => yyi.DATAIN
+yi => inst1.IN1
+cout <= allplus:inst.co
+partji => allplus:inst.b
+ccin => allplus:inst.cin
+partout <= allplus:inst.s
+
+
+|ALU|multiply:inst41|danyuan:inst7|allplus:inst
+s <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst3.IN0
+a => inst2.IN0
+b => inst.IN1
+b => inst4.IN0
+b => inst2.IN1
+cin => inst1.IN1
+cin => inst3.IN1
+cin => inst4.IN1
+co <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|multiply:inst41|danyuan:inst39
+xxi <= xi.DB_MAX_OUTPUT_PORT_TYPE
+xi => xxi.DATAIN
+xi => inst1.IN0
+yyi <= yi.DB_MAX_OUTPUT_PORT_TYPE
+yi => yyi.DATAIN
+yi => inst1.IN1
+cout <= allplus:inst.co
+partji => allplus:inst.b
+ccin => allplus:inst.cin
+partout <= allplus:inst.s
+
+
+|ALU|multiply:inst41|danyuan:inst39|allplus:inst
+s <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst3.IN0
+a => inst2.IN0
+b => inst.IN1
+b => inst4.IN0
+b => inst2.IN1
+cin => inst1.IN1
+cin => inst3.IN1
+cin => inst4.IN1
+co <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|multiply:inst41|danyuan:inst45
+xxi <= xi.DB_MAX_OUTPUT_PORT_TYPE
+xi => xxi.DATAIN
+xi => inst1.IN0
+yyi <= yi.DB_MAX_OUTPUT_PORT_TYPE
+yi => yyi.DATAIN
+yi => inst1.IN1
+cout <= allplus:inst.co
+partji => allplus:inst.b
+ccin => allplus:inst.cin
+partout <= allplus:inst.s
+
+
+|ALU|multiply:inst41|danyuan:inst45|allplus:inst
+s <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst3.IN0
+a => inst2.IN0
+b => inst.IN1
+b => inst4.IN0
+b => inst2.IN1
+cin => inst1.IN1
+cin => inst3.IN1
+cin => inst4.IN1
+co <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|multiply:inst41|danyuan:inst30
+xxi <= xi.DB_MAX_OUTPUT_PORT_TYPE
+xi => xxi.DATAIN
+xi => inst1.IN0
+yyi <= yi.DB_MAX_OUTPUT_PORT_TYPE
+yi => yyi.DATAIN
+yi => inst1.IN1
+cout <= allplus:inst.co
+partji => allplus:inst.b
+ccin => allplus:inst.cin
+partout <= allplus:inst.s
+
+
+|ALU|multiply:inst41|danyuan:inst30|allplus:inst
+s <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst3.IN0
+a => inst2.IN0
+b => inst.IN1
+b => inst4.IN0
+b => inst2.IN1
+cin => inst1.IN1
+cin => inst3.IN1
+cin => inst4.IN1
+co <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|multiply:inst41|danyuan:inst2
+xxi <= xi.DB_MAX_OUTPUT_PORT_TYPE
+xi => xxi.DATAIN
+xi => inst1.IN0
+yyi <= yi.DB_MAX_OUTPUT_PORT_TYPE
+yi => yyi.DATAIN
+yi => inst1.IN1
+cout <= allplus:inst.co
+partji => allplus:inst.b
+ccin => allplus:inst.cin
+partout <= allplus:inst.s
+
+
+|ALU|multiply:inst41|danyuan:inst2|allplus:inst
+s <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst3.IN0
+a => inst2.IN0
+b => inst.IN1
+b => inst4.IN0
+b => inst2.IN1
+cin => inst1.IN1
+cin => inst3.IN1
+cin => inst4.IN1
+co <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|multiply:inst41|danyuan:inst6
+xxi <= xi.DB_MAX_OUTPUT_PORT_TYPE
+xi => xxi.DATAIN
+xi => inst1.IN0
+yyi <= yi.DB_MAX_OUTPUT_PORT_TYPE
+yi => yyi.DATAIN
+yi => inst1.IN1
+cout <= allplus:inst.co
+partji => allplus:inst.b
+ccin => allplus:inst.cin
+partout <= allplus:inst.s
+
+
+|ALU|multiply:inst41|danyuan:inst6|allplus:inst
+s <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst3.IN0
+a => inst2.IN0
+b => inst.IN1
+b => inst4.IN0
+b => inst2.IN1
+cin => inst1.IN1
+cin => inst3.IN1
+cin => inst4.IN1
+co <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|multiply:inst41|danyuan:inst11
+xxi <= xi.DB_MAX_OUTPUT_PORT_TYPE
+xi => xxi.DATAIN
+xi => inst1.IN0
+yyi <= yi.DB_MAX_OUTPUT_PORT_TYPE
+yi => yyi.DATAIN
+yi => inst1.IN1
+cout <= allplus:inst.co
+partji => allplus:inst.b
+ccin => allplus:inst.cin
+partout <= allplus:inst.s
+
+
+|ALU|multiply:inst41|danyuan:inst11|allplus:inst
+s <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst3.IN0
+a => inst2.IN0
+b => inst.IN1
+b => inst4.IN0
+b => inst2.IN1
+cin => inst1.IN1
+cin => inst3.IN1
+cin => inst4.IN1
+co <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|multiply:inst41|danyuan:inst57
+xxi <= xi.DB_MAX_OUTPUT_PORT_TYPE
+xi => xxi.DATAIN
+xi => inst1.IN0
+yyi <= yi.DB_MAX_OUTPUT_PORT_TYPE
+yi => yyi.DATAIN
+yi => inst1.IN1
+cout <= allplus:inst.co
+partji => allplus:inst.b
+ccin => allplus:inst.cin
+partout <= allplus:inst.s
+
+
+|ALU|multiply:inst41|danyuan:inst57|allplus:inst
+s <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst3.IN0
+a => inst2.IN0
+b => inst.IN1
+b => inst4.IN0
+b => inst2.IN1
+cin => inst1.IN1
+cin => inst3.IN1
+cin => inst4.IN1
+co <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|multiply:inst41|danyuan:inst43
+xxi <= xi.DB_MAX_OUTPUT_PORT_TYPE
+xi => xxi.DATAIN
+xi => inst1.IN0
+yyi <= yi.DB_MAX_OUTPUT_PORT_TYPE
+yi => yyi.DATAIN
+yi => inst1.IN1
+cout <= allplus:inst.co
+partji => allplus:inst.b
+ccin => allplus:inst.cin
+partout <= allplus:inst.s
+
+
+|ALU|multiply:inst41|danyuan:inst43|allplus:inst
+s <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst3.IN0
+a => inst2.IN0
+b => inst.IN1
+b => inst4.IN0
+b => inst2.IN1
+cin => inst1.IN1
+cin => inst3.IN1
+cin => inst4.IN1
+co <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|multiply:inst41|danyuan:inst49
+xxi <= xi.DB_MAX_OUTPUT_PORT_TYPE
+xi => xxi.DATAIN
+xi => inst1.IN0
+yyi <= yi.DB_MAX_OUTPUT_PORT_TYPE
+yi => yyi.DATAIN
+yi => inst1.IN1
+cout <= allplus:inst.co
+partji => allplus:inst.b
+ccin => allplus:inst.cin
+partout <= allplus:inst.s
+
+
+|ALU|multiply:inst41|danyuan:inst49|allplus:inst
+s <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst3.IN0
+a => inst2.IN0
+b => inst.IN1
+b => inst4.IN0
+b => inst2.IN1
+cin => inst1.IN1
+cin => inst3.IN1
+cin => inst4.IN1
+co <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|multiply:inst41|danyuan:inst1
+xxi <= xi.DB_MAX_OUTPUT_PORT_TYPE
+xi => xxi.DATAIN
+xi => inst1.IN0
+yyi <= yi.DB_MAX_OUTPUT_PORT_TYPE
+yi => yyi.DATAIN
+yi => inst1.IN1
+cout <= allplus:inst.co
+partji => allplus:inst.b
+ccin => allplus:inst.cin
+partout <= allplus:inst.s
+
+
+|ALU|multiply:inst41|danyuan:inst1|allplus:inst
+s <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst3.IN0
+a => inst2.IN0
+b => inst.IN1
+b => inst4.IN0
+b => inst2.IN1
+cin => inst1.IN1
+cin => inst3.IN1
+cin => inst4.IN1
+co <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|multiply:inst41|danyuan:inst5
+xxi <= xi.DB_MAX_OUTPUT_PORT_TYPE
+xi => xxi.DATAIN
+xi => inst1.IN0
+yyi <= yi.DB_MAX_OUTPUT_PORT_TYPE
+yi => yyi.DATAIN
+yi => inst1.IN1
+cout <= allplus:inst.co
+partji => allplus:inst.b
+ccin => allplus:inst.cin
+partout <= allplus:inst.s
+
+
+|ALU|multiply:inst41|danyuan:inst5|allplus:inst
+s <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst3.IN0
+a => inst2.IN0
+b => inst.IN1
+b => inst4.IN0
+b => inst2.IN1
+cin => inst1.IN1
+cin => inst3.IN1
+cin => inst4.IN1
+co <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|multiply:inst41|danyuan:inst10
+xxi <= xi.DB_MAX_OUTPUT_PORT_TYPE
+xi => xxi.DATAIN
+xi => inst1.IN0
+yyi <= yi.DB_MAX_OUTPUT_PORT_TYPE
+yi => yyi.DATAIN
+yi => inst1.IN1
+cout <= allplus:inst.co
+partji => allplus:inst.b
+ccin => allplus:inst.cin
+partout <= allplus:inst.s
+
+
+|ALU|multiply:inst41|danyuan:inst10|allplus:inst
+s <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst3.IN0
+a => inst2.IN0
+b => inst.IN1
+b => inst4.IN0
+b => inst2.IN1
+cin => inst1.IN1
+cin => inst3.IN1
+cin => inst4.IN1
+co <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|multiply:inst41|danyuan:inst15
+xxi <= xi.DB_MAX_OUTPUT_PORT_TYPE
+xi => xxi.DATAIN
+xi => inst1.IN0
+yyi <= yi.DB_MAX_OUTPUT_PORT_TYPE
+yi => yyi.DATAIN
+yi => inst1.IN1
+cout <= allplus:inst.co
+partji => allplus:inst.b
+ccin => allplus:inst.cin
+partout <= allplus:inst.s
+
+
+|ALU|multiply:inst41|danyuan:inst15|allplus:inst
+s <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst3.IN0
+a => inst2.IN0
+b => inst.IN1
+b => inst4.IN0
+b => inst2.IN1
+cin => inst1.IN1
+cin => inst3.IN1
+cin => inst4.IN1
+co <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|multiply:inst41|danyuan:inst12
+xxi <= xi.DB_MAX_OUTPUT_PORT_TYPE
+xi => xxi.DATAIN
+xi => inst1.IN0
+yyi <= yi.DB_MAX_OUTPUT_PORT_TYPE
+yi => yyi.DATAIN
+yi => inst1.IN1
+cout <= allplus:inst.co
+partji => allplus:inst.b
+ccin => allplus:inst.cin
+partout <= allplus:inst.s
+
+
+|ALU|multiply:inst41|danyuan:inst12|allplus:inst
+s <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst3.IN0
+a => inst2.IN0
+b => inst.IN1
+b => inst4.IN0
+b => inst2.IN1
+cin => inst1.IN1
+cin => inst3.IN1
+cin => inst4.IN1
+co <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|multiply:inst41|danyuan:inst13
+xxi <= xi.DB_MAX_OUTPUT_PORT_TYPE
+xi => xxi.DATAIN
+xi => inst1.IN0
+yyi <= yi.DB_MAX_OUTPUT_PORT_TYPE
+yi => yyi.DATAIN
+yi => inst1.IN1
+cout <= allplus:inst.co
+partji => allplus:inst.b
+ccin => allplus:inst.cin
+partout <= allplus:inst.s
+
+
+|ALU|multiply:inst41|danyuan:inst13|allplus:inst
+s <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst3.IN0
+a => inst2.IN0
+b => inst.IN1
+b => inst4.IN0
+b => inst2.IN1
+cin => inst1.IN1
+cin => inst3.IN1
+cin => inst4.IN1
+co <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|multiply:inst41|danyuan:inst14
+xxi <= xi.DB_MAX_OUTPUT_PORT_TYPE
+xi => xxi.DATAIN
+xi => inst1.IN0
+yyi <= yi.DB_MAX_OUTPUT_PORT_TYPE
+yi => yyi.DATAIN
+yi => inst1.IN1
+cout <= allplus:inst.co
+partji => allplus:inst.b
+ccin => allplus:inst.cin
+partout <= allplus:inst.s
+
+
+|ALU|multiply:inst41|danyuan:inst14|allplus:inst
+s <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst3.IN0
+a => inst2.IN0
+b => inst.IN1
+b => inst4.IN0
+b => inst2.IN1
+cin => inst1.IN1
+cin => inst3.IN1
+cin => inst4.IN1
+co <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|multiply:inst41|danyuan:inst9
+xxi <= xi.DB_MAX_OUTPUT_PORT_TYPE
+xi => xxi.DATAIN
+xi => inst1.IN0
+yyi <= yi.DB_MAX_OUTPUT_PORT_TYPE
+yi => yyi.DATAIN
+yi => inst1.IN1
+cout <= allplus:inst.co
+partji => allplus:inst.b
+ccin => allplus:inst.cin
+partout <= allplus:inst.s
+
+
+|ALU|multiply:inst41|danyuan:inst9|allplus:inst
+s <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst3.IN0
+a => inst2.IN0
+b => inst.IN1
+b => inst4.IN0
+b => inst2.IN1
+cin => inst1.IN1
+cin => inst3.IN1
+cin => inst4.IN1
+co <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|multiply:inst41|danyuan:inst8
+xxi <= xi.DB_MAX_OUTPUT_PORT_TYPE
+xi => xxi.DATAIN
+xi => inst1.IN0
+yyi <= yi.DB_MAX_OUTPUT_PORT_TYPE
+yi => yyi.DATAIN
+yi => inst1.IN1
+cout <= allplus:inst.co
+partji => allplus:inst.b
+ccin => allplus:inst.cin
+partout <= allplus:inst.s
+
+
+|ALU|multiply:inst41|danyuan:inst8|allplus:inst
+s <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst3.IN0
+a => inst2.IN0
+b => inst.IN1
+b => inst4.IN0
+b => inst2.IN1
+cin => inst1.IN1
+cin => inst3.IN1
+cin => inst4.IN1
+co <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|multiply:inst41|danyuan:inst4
+xxi <= xi.DB_MAX_OUTPUT_PORT_TYPE
+xi => xxi.DATAIN
+xi => inst1.IN0
+yyi <= yi.DB_MAX_OUTPUT_PORT_TYPE
+yi => yyi.DATAIN
+yi => inst1.IN1
+cout <= allplus:inst.co
+partji => allplus:inst.b
+ccin => allplus:inst.cin
+partout <= allplus:inst.s
+
+
+|ALU|multiply:inst41|danyuan:inst4|allplus:inst
+s <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst3.IN0
+a => inst2.IN0
+b => inst.IN1
+b => inst4.IN0
+b => inst2.IN1
+cin => inst1.IN1
+cin => inst3.IN1
+cin => inst4.IN1
+co <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|multiply:inst41|danyuan:inst34
+xxi <= xi.DB_MAX_OUTPUT_PORT_TYPE
+xi => xxi.DATAIN
+xi => inst1.IN0
+yyi <= yi.DB_MAX_OUTPUT_PORT_TYPE
+yi => yyi.DATAIN
+yi => inst1.IN1
+cout <= allplus:inst.co
+partji => allplus:inst.b
+ccin => allplus:inst.cin
+partout <= allplus:inst.s
+
+
+|ALU|multiply:inst41|danyuan:inst34|allplus:inst
+s <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst3.IN0
+a => inst2.IN0
+b => inst.IN1
+b => inst4.IN0
+b => inst2.IN1
+cin => inst1.IN1
+cin => inst3.IN1
+cin => inst4.IN1
+co <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|multiply:inst41|danyuan:inst36
+xxi <= xi.DB_MAX_OUTPUT_PORT_TYPE
+xi => xxi.DATAIN
+xi => inst1.IN0
+yyi <= yi.DB_MAX_OUTPUT_PORT_TYPE
+yi => yyi.DATAIN
+yi => inst1.IN1
+cout <= allplus:inst.co
+partji => allplus:inst.b
+ccin => allplus:inst.cin
+partout <= allplus:inst.s
+
+
+|ALU|multiply:inst41|danyuan:inst36|allplus:inst
+s <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst3.IN0
+a => inst2.IN0
+b => inst.IN1
+b => inst4.IN0
+b => inst2.IN1
+cin => inst1.IN1
+cin => inst3.IN1
+cin => inst4.IN1
+co <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|multiply:inst41|danyuan:inst47
+xxi <= xi.DB_MAX_OUTPUT_PORT_TYPE
+xi => xxi.DATAIN
+xi => inst1.IN0
+yyi <= yi.DB_MAX_OUTPUT_PORT_TYPE
+yi => yyi.DATAIN
+yi => inst1.IN1
+cout <= allplus:inst.co
+partji => allplus:inst.b
+ccin => allplus:inst.cin
+partout <= allplus:inst.s
+
+
+|ALU|multiply:inst41|danyuan:inst47|allplus:inst
+s <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst3.IN0
+a => inst2.IN0
+b => inst.IN1
+b => inst4.IN0
+b => inst2.IN1
+cin => inst1.IN1
+cin => inst3.IN1
+cin => inst4.IN1
+co <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|multiply:inst41|danyuan:inst40
+xxi <= xi.DB_MAX_OUTPUT_PORT_TYPE
+xi => xxi.DATAIN
+xi => inst1.IN0
+yyi <= yi.DB_MAX_OUTPUT_PORT_TYPE
+yi => yyi.DATAIN
+yi => inst1.IN1
+cout <= allplus:inst.co
+partji => allplus:inst.b
+ccin => allplus:inst.cin
+partout <= allplus:inst.s
+
+
+|ALU|multiply:inst41|danyuan:inst40|allplus:inst
+s <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst3.IN0
+a => inst2.IN0
+b => inst.IN1
+b => inst4.IN0
+b => inst2.IN1
+cin => inst1.IN1
+cin => inst3.IN1
+cin => inst4.IN1
+co <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|multiply:inst41|danyuan:inst38
+xxi <= xi.DB_MAX_OUTPUT_PORT_TYPE
+xi => xxi.DATAIN
+xi => inst1.IN0
+yyi <= yi.DB_MAX_OUTPUT_PORT_TYPE
+yi => yyi.DATAIN
+yi => inst1.IN1
+cout <= allplus:inst.co
+partji => allplus:inst.b
+ccin => allplus:inst.cin
+partout <= allplus:inst.s
+
+
+|ALU|multiply:inst41|danyuan:inst38|allplus:inst
+s <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst3.IN0
+a => inst2.IN0
+b => inst.IN1
+b => inst4.IN0
+b => inst2.IN1
+cin => inst1.IN1
+cin => inst3.IN1
+cin => inst4.IN1
+co <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|multiply:inst41|danyuan:inst44
+xxi <= xi.DB_MAX_OUTPUT_PORT_TYPE
+xi => xxi.DATAIN
+xi => inst1.IN0
+yyi <= yi.DB_MAX_OUTPUT_PORT_TYPE
+yi => yyi.DATAIN
+yi => inst1.IN1
+cout <= allplus:inst.co
+partji => allplus:inst.b
+ccin => allplus:inst.cin
+partout <= allplus:inst.s
+
+
+|ALU|multiply:inst41|danyuan:inst44|allplus:inst
+s <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst3.IN0
+a => inst2.IN0
+b => inst.IN1
+b => inst4.IN0
+b => inst2.IN1
+cin => inst1.IN1
+cin => inst3.IN1
+cin => inst4.IN1
+co <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|multiply:inst41|danyuan:inst42
+xxi <= xi.DB_MAX_OUTPUT_PORT_TYPE
+xi => xxi.DATAIN
+xi => inst1.IN0
+yyi <= yi.DB_MAX_OUTPUT_PORT_TYPE
+yi => yyi.DATAIN
+yi => inst1.IN1
+cout <= allplus:inst.co
+partji => allplus:inst.b
+ccin => allplus:inst.cin
+partout <= allplus:inst.s
+
+
+|ALU|multiply:inst41|danyuan:inst42|allplus:inst
+s <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst3.IN0
+a => inst2.IN0
+b => inst.IN1
+b => inst4.IN0
+b => inst2.IN1
+cin => inst1.IN1
+cin => inst3.IN1
+cin => inst4.IN1
+co <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|multiply:inst41|danyuan:inst48
+xxi <= xi.DB_MAX_OUTPUT_PORT_TYPE
+xi => xxi.DATAIN
+xi => inst1.IN0
+yyi <= yi.DB_MAX_OUTPUT_PORT_TYPE
+yi => yyi.DATAIN
+yi => inst1.IN1
+cout <= allplus:inst.co
+partji => allplus:inst.b
+ccin => allplus:inst.cin
+partout <= allplus:inst.s
+
+
+|ALU|multiply:inst41|danyuan:inst48|allplus:inst
+s <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst3.IN0
+a => inst2.IN0
+b => inst.IN1
+b => inst4.IN0
+b => inst2.IN1
+cin => inst1.IN1
+cin => inst3.IN1
+cin => inst4.IN1
+co <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|multiply:inst41|danyuan:inst46
+xxi <= xi.DB_MAX_OUTPUT_PORT_TYPE
+xi => xxi.DATAIN
+xi => inst1.IN0
+yyi <= yi.DB_MAX_OUTPUT_PORT_TYPE
+yi => yyi.DATAIN
+yi => inst1.IN1
+cout <= allplus:inst.co
+partji => allplus:inst.b
+ccin => allplus:inst.cin
+partout <= allplus:inst.s
+
+
+|ALU|multiply:inst41|danyuan:inst46|allplus:inst
+s <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst3.IN0
+a => inst2.IN0
+b => inst.IN1
+b => inst4.IN0
+b => inst2.IN1
+cin => inst1.IN1
+cin => inst3.IN1
+cin => inst4.IN1
+co <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|multiply:inst41|danyuan:inst50
+xxi <= xi.DB_MAX_OUTPUT_PORT_TYPE
+xi => xxi.DATAIN
+xi => inst1.IN0
+yyi <= yi.DB_MAX_OUTPUT_PORT_TYPE
+yi => yyi.DATAIN
+yi => inst1.IN1
+cout <= allplus:inst.co
+partji => allplus:inst.b
+ccin => allplus:inst.cin
+partout <= allplus:inst.s
+
+
+|ALU|multiply:inst41|danyuan:inst50|allplus:inst
+s <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst3.IN0
+a => inst2.IN0
+b => inst.IN1
+b => inst4.IN0
+b => inst2.IN1
+cin => inst1.IN1
+cin => inst3.IN1
+cin => inst4.IN1
+co <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|multiply:inst41|danyuan:inst52
+xxi <= xi.DB_MAX_OUTPUT_PORT_TYPE
+xi => xxi.DATAIN
+xi => inst1.IN0
+yyi <= yi.DB_MAX_OUTPUT_PORT_TYPE
+yi => yyi.DATAIN
+yi => inst1.IN1
+cout <= allplus:inst.co
+partji => allplus:inst.b
+ccin => allplus:inst.cin
+partout <= allplus:inst.s
+
+
+|ALU|multiply:inst41|danyuan:inst52|allplus:inst
+s <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst3.IN0
+a => inst2.IN0
+b => inst.IN1
+b => inst4.IN0
+b => inst2.IN1
+cin => inst1.IN1
+cin => inst3.IN1
+cin => inst4.IN1
+co <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|multiply:inst41|danyuan:inst65
+xxi <= xi.DB_MAX_OUTPUT_PORT_TYPE
+xi => xxi.DATAIN
+xi => inst1.IN0
+yyi <= yi.DB_MAX_OUTPUT_PORT_TYPE
+yi => yyi.DATAIN
+yi => inst1.IN1
+cout <= allplus:inst.co
+partji => allplus:inst.b
+ccin => allplus:inst.cin
+partout <= allplus:inst.s
+
+
+|ALU|multiply:inst41|danyuan:inst65|allplus:inst
+s <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst3.IN0
+a => inst2.IN0
+b => inst.IN1
+b => inst4.IN0
+b => inst2.IN1
+cin => inst1.IN1
+cin => inst3.IN1
+cin => inst4.IN1
+co <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|multiply:inst41|danyuan:inst61
+xxi <= xi.DB_MAX_OUTPUT_PORT_TYPE
+xi => xxi.DATAIN
+xi => inst1.IN0
+yyi <= yi.DB_MAX_OUTPUT_PORT_TYPE
+yi => yyi.DATAIN
+yi => inst1.IN1
+cout <= allplus:inst.co
+partji => allplus:inst.b
+ccin => allplus:inst.cin
+partout <= allplus:inst.s
+
+
+|ALU|multiply:inst41|danyuan:inst61|allplus:inst
+s <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst3.IN0
+a => inst2.IN0
+b => inst.IN1
+b => inst4.IN0
+b => inst2.IN1
+cin => inst1.IN1
+cin => inst3.IN1
+cin => inst4.IN1
+co <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|multiply:inst41|danyuan:inst63
+xxi <= xi.DB_MAX_OUTPUT_PORT_TYPE
+xi => xxi.DATAIN
+xi => inst1.IN0
+yyi <= yi.DB_MAX_OUTPUT_PORT_TYPE
+yi => yyi.DATAIN
+yi => inst1.IN1
+cout <= allplus:inst.co
+partji => allplus:inst.b
+ccin => allplus:inst.cin
+partout <= allplus:inst.s
+
+
+|ALU|multiply:inst41|danyuan:inst63|allplus:inst
+s <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst3.IN0
+a => inst2.IN0
+b => inst.IN1
+b => inst4.IN0
+b => inst2.IN1
+cin => inst1.IN1
+cin => inst3.IN1
+cin => inst4.IN1
+co <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|multiply:inst41|danyuan:inst59
+xxi <= xi.DB_MAX_OUTPUT_PORT_TYPE
+xi => xxi.DATAIN
+xi => inst1.IN0
+yyi <= yi.DB_MAX_OUTPUT_PORT_TYPE
+yi => yyi.DATAIN
+yi => inst1.IN1
+cout <= allplus:inst.co
+partji => allplus:inst.b
+ccin => allplus:inst.cin
+partout <= allplus:inst.s
+
+
+|ALU|multiply:inst41|danyuan:inst59|allplus:inst
+s <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst3.IN0
+a => inst2.IN0
+b => inst.IN1
+b => inst4.IN0
+b => inst2.IN1
+cin => inst1.IN1
+cin => inst3.IN1
+cin => inst4.IN1
+co <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|multiply:inst41|danyuan:inst55
+xxi <= xi.DB_MAX_OUTPUT_PORT_TYPE
+xi => xxi.DATAIN
+xi => inst1.IN0
+yyi <= yi.DB_MAX_OUTPUT_PORT_TYPE
+yi => yyi.DATAIN
+yi => inst1.IN1
+cout <= allplus:inst.co
+partji => allplus:inst.b
+ccin => allplus:inst.cin
+partout <= allplus:inst.s
+
+
+|ALU|multiply:inst41|danyuan:inst55|allplus:inst
+s <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst3.IN0
+a => inst2.IN0
+b => inst.IN1
+b => inst4.IN0
+b => inst2.IN1
+cin => inst1.IN1
+cin => inst3.IN1
+cin => inst4.IN1
+co <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|multiply:inst41|danyuan:inst56
+xxi <= xi.DB_MAX_OUTPUT_PORT_TYPE
+xi => xxi.DATAIN
+xi => inst1.IN0
+yyi <= yi.DB_MAX_OUTPUT_PORT_TYPE
+yi => yyi.DATAIN
+yi => inst1.IN1
+cout <= allplus:inst.co
+partji => allplus:inst.b
+ccin => allplus:inst.cin
+partout <= allplus:inst.s
+
+
+|ALU|multiply:inst41|danyuan:inst56|allplus:inst
+s <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst3.IN0
+a => inst2.IN0
+b => inst.IN1
+b => inst4.IN0
+b => inst2.IN1
+cin => inst1.IN1
+cin => inst3.IN1
+cin => inst4.IN1
+co <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|multiply:inst41|danyuan:inst54
+xxi <= xi.DB_MAX_OUTPUT_PORT_TYPE
+xi => xxi.DATAIN
+xi => inst1.IN0
+yyi <= yi.DB_MAX_OUTPUT_PORT_TYPE
+yi => yyi.DATAIN
+yi => inst1.IN1
+cout <= allplus:inst.co
+partji => allplus:inst.b
+ccin => allplus:inst.cin
+partout <= allplus:inst.s
+
+
+|ALU|multiply:inst41|danyuan:inst54|allplus:inst
+s <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst3.IN0
+a => inst2.IN0
+b => inst.IN1
+b => inst4.IN0
+b => inst2.IN1
+cin => inst1.IN1
+cin => inst3.IN1
+cin => inst4.IN1
+co <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|multiply:inst41|danyuan:inst60
+xxi <= xi.DB_MAX_OUTPUT_PORT_TYPE
+xi => xxi.DATAIN
+xi => inst1.IN0
+yyi <= yi.DB_MAX_OUTPUT_PORT_TYPE
+yi => yyi.DATAIN
+yi => inst1.IN1
+cout <= allplus:inst.co
+partji => allplus:inst.b
+ccin => allplus:inst.cin
+partout <= allplus:inst.s
+
+
+|ALU|multiply:inst41|danyuan:inst60|allplus:inst
+s <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst3.IN0
+a => inst2.IN0
+b => inst.IN1
+b => inst4.IN0
+b => inst2.IN1
+cin => inst1.IN1
+cin => inst3.IN1
+cin => inst4.IN1
+co <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|multiply:inst41|danyuan:inst58
+xxi <= xi.DB_MAX_OUTPUT_PORT_TYPE
+xi => xxi.DATAIN
+xi => inst1.IN0
+yyi <= yi.DB_MAX_OUTPUT_PORT_TYPE
+yi => yyi.DATAIN
+yi => inst1.IN1
+cout <= allplus:inst.co
+partji => allplus:inst.b
+ccin => allplus:inst.cin
+partout <= allplus:inst.s
+
+
+|ALU|multiply:inst41|danyuan:inst58|allplus:inst
+s <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst3.IN0
+a => inst2.IN0
+b => inst.IN1
+b => inst4.IN0
+b => inst2.IN1
+cin => inst1.IN1
+cin => inst3.IN1
+cin => inst4.IN1
+co <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|multiply:inst41|danyuan:inst64
+xxi <= xi.DB_MAX_OUTPUT_PORT_TYPE
+xi => xxi.DATAIN
+xi => inst1.IN0
+yyi <= yi.DB_MAX_OUTPUT_PORT_TYPE
+yi => yyi.DATAIN
+yi => inst1.IN1
+cout <= allplus:inst.co
+partji => allplus:inst.b
+ccin => allplus:inst.cin
+partout <= allplus:inst.s
+
+
+|ALU|multiply:inst41|danyuan:inst64|allplus:inst
+s <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst3.IN0
+a => inst2.IN0
+b => inst.IN1
+b => inst4.IN0
+b => inst2.IN1
+cin => inst1.IN1
+cin => inst3.IN1
+cin => inst4.IN1
+co <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|multiply:inst41|danyuan:inst62
+xxi <= xi.DB_MAX_OUTPUT_PORT_TYPE
+xi => xxi.DATAIN
+xi => inst1.IN0
+yyi <= yi.DB_MAX_OUTPUT_PORT_TYPE
+yi => yyi.DATAIN
+yi => inst1.IN1
+cout <= allplus:inst.co
+partji => allplus:inst.b
+ccin => allplus:inst.cin
+partout <= allplus:inst.s
+
+
+|ALU|multiply:inst41|danyuan:inst62|allplus:inst
+s <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst3.IN0
+a => inst2.IN0
+b => inst.IN1
+b => inst4.IN0
+b => inst2.IN1
+cin => inst1.IN1
+cin => inst3.IN1
+cin => inst4.IN1
+co <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|shift:inst4
+Q8 <= inst65.DB_MAX_OUTPUT_PORT_TYPE
+RM => inst9.IN1
+RM => inst1.IN1
+RM => inst27.IN1
+RM => inst3.IN1
+RM => inst29.IN1
+RM => inst5.IN1
+RM => inst31.IN1
+RM => inst7.IN1
+RM => inst33.IN1
+RM => ins9t9.IN1
+RM => inst37.IN1
+RM => inst13.IN1
+RM => inst39.IN1
+RM => inst15.IN1
+RM => inst35.IN1
+RM => inst11.IN1
+B7 => inst26.IN0
+B7 => inst29.IN0
+LM => inst26.IN1
+LM => inst211.IN1
+LM => inst24.IN1
+LM => inst2.IN1
+LM => inst28.IN1
+LM => inst4.IN1
+LM => inst30.IN1
+LM => inst6.IN1
+LM => inst32.IN1
+LM => inst8.IN1
+LM => inst36.IN1
+LM => inst12.IN1
+LM => inst38.IN1
+LM => inst14.IN1
+LM => inst34.IN1
+LM => inst10.IN1
+CHOOSE => inst56.IN0
+CHOOSE => inst.IN1
+CHOOSE => inst49.IN1
+CHOOSE => inst50.IN1
+CHOOSE => inst51.IN1
+CHOOSE => inst52.IN1
+CHOOSE => inst54.IN1
+CHOOSE => inst55.IN1
+CHOOSE => inst53.IN1
+A7 => inst211.IN0
+A7 => inst5.IN0
+Q7 <= inst66.DB_MAX_OUTPUT_PORT_TYPE
+B8 => inst27.IN0
+B6 => inst24.IN0
+B6 => inst31.IN0
+A8 => inst3.IN0
+A6 => inst2.IN0
+A6 => inst7.IN0
+Q6 <= inst67.DB_MAX_OUTPUT_PORT_TYPE
+B5 => inst28.IN0
+B5 => inst33.IN0
+A5 => inst4.IN0
+A5 => ins9t9.IN0
+Q5 <= inst68.DB_MAX_OUTPUT_PORT_TYPE
+B4 => inst30.IN0
+B4 => inst35.IN0
+A4 => inst6.IN0
+A4 => inst11.IN0
+Q4 <= inst69.DB_MAX_OUTPUT_PORT_TYPE
+B3 => inst32.IN0
+B3 => inst37.IN0
+A3 => inst8.IN0
+A3 => inst13.IN0
+Q2 <= inst71.DB_MAX_OUTPUT_PORT_TYPE
+B1 => inst36.IN0
+A1 => inst12.IN0
+Q1 <= inst72.DB_MAX_OUTPUT_PORT_TYPE
+B2 => inst39.IN0
+B2 => inst34.IN0
+A2 => inst15.IN0
+A2 => inst10.IN0
+Q3 <= inst70.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|74181:inst
+F1N <= 86.DB_MAX_OUTPUT_PORT_TYPE
+A1N => 14.IN0
+A1N => 13.IN2
+A1N => 44.IN0
+S3 => 14.IN1
+S3 => 9.IN1
+S3 => 24.IN1
+S3 => 19.IN1
+B1N => 14.IN2
+B1N => 28.IN0
+B1N => 11.IN1
+S2 => 13.IN1
+S2 => 8.IN1
+S2 => 23.IN1
+S2 => 18.IN1
+S0 => 11.IN0
+S0 => 6.IN0
+S0 => 21.IN0
+S0 => 16.IN0
+S1 => 12.IN1
+S1 => 7.IN1
+S1 => 22.IN1
+S1 => 17.IN1
+M => 98.IN0
+A0N => 9.IN0
+A0N => 8.IN2
+A0N => 43.IN0
+B0N => 9.IN2
+B0N => 27.IN0
+B0N => 6.IN1
+CN => 66.IN2
+CN => 73.IN0
+CN => 73.IN3
+CN => 69.IN0
+CN => 64.IN0
+CN => 61.IN4
+CN => 61.IN5
+AEQB <= 83.DB_MAX_OUTPUT_PORT_TYPE
+A3N => 24.IN0
+A3N => 23.IN2
+A3N => 51.IN0
+B3N => 24.IN2
+B3N => 25.IN0
+B3N => 21.IN1
+A2N => 19.IN0
+A2N => 18.IN2
+A2N => 45.IN0
+B2N => 19.IN2
+B2N => 31.IN0
+B2N => 16.IN1
+F2N <= 85.DB_MAX_OUTPUT_PORT_TYPE
+F3N <= 84.DB_MAX_OUTPUT_PORT_TYPE
+PN <= 60.DB_MAX_OUTPUT_PORT_TYPE
+CN4 <= 78.DB_MAX_OUTPUT_PORT_TYPE
+GN <= 63.DB_MAX_OUTPUT_PORT_TYPE
+F0N <= 87.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|74182:inst2
+GN <= 24.DB_MAX_OUTPUT_PORT_TYPE
+GN3 => 11.IN0
+GN3 => 12.IN2
+GN3 => 13.IN2
+GN3 => 14.IN1
+GN2 => 11.IN1
+GN2 => 12.IN1
+GN2 => 13.IN0
+GN2 => 15.IN0
+GN2 => 16.IN0
+GN2 => 17.IN2
+GN2 => 18.IN0
+GN1 => 11.IN2
+GN1 => 12.IN3
+GN1 => 15.IN1
+GN1 => 16.IN2
+GN1 => 17.IN0
+GN1 => 21.IN0
+GN1 => 20.IN2
+GN1 => 19.IN1
+GN0 => 11.IN3
+GN0 => 15.IN2
+GN0 => 16.IN3
+GN0 => 20.IN0
+GN0 => 19.IN2
+GN0 => 22.IN0
+GN0 => 23.IN0
+PN1 => 12.IN0
+PN1 => 10.IN2
+PN1 => 17.IN1
+PN1 => 21.IN1
+PN2 => 13.IN1
+PN2 => 10.IN1
+PN2 => 18.IN1
+PN3 => 14.IN0
+PN3 => 10.IN0
+PN <= 10.DB_MAX_OUTPUT_PORT_TYPE
+PN0 => 10.IN3
+PN0 => 16.IN1
+PN0 => 20.IN1
+PN0 => 23.IN1
+CZ <= 27.DB_MAX_OUTPUT_PORT_TYPE
+CI => 33.IN0
+CY <= 29.DB_MAX_OUTPUT_PORT_TYPE
+CX <= 31.DB_MAX_OUTPUT_PORT_TYPE
+
+

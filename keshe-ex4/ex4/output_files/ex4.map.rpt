@@ -1,0 +1,760 @@
+Analysis & Synthesis report for ex4
+Mon Nov 25 03:56:54 2024
+Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Analysis & Synthesis RAM Summary
+  9. Analysis & Synthesis IP Cores Summary
+ 10. Registers Removed During Synthesis
+ 11. General Register Statistics
+ 12. Inverted Register Statistics
+ 13. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 14. Source assignments for RAM:ram|altsyncram:altsyncram_component|altsyncram_fqj1:auto_generated|altsyncram_d3a2:altsyncram1
+ 15. Parameter Settings for User Entity Instance: RAM:ram|altsyncram:altsyncram_component
+ 16. altsyncram Parameter Settings by Entity Instance
+ 17. In-System Memory Content Editor Settings
+ 18. Elapsed Time Per Partition
+ 19. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Mon Nov 25 03:56:54 2024       ;
+; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Full Version ;
+; Revision Name                      ; ex4                                         ;
+; Top-level Entity Name              ; ex4                                         ;
+; Family                             ; Cyclone IV E                                ;
+; Total logic elements               ; 418                                         ;
+;     Total combinational functions  ; 364                                         ;
+;     Dedicated logic registers      ; 154                                         ;
+; Total registers                    ; 154                                         ;
+; Total pins                         ; 13                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 2,048                                       ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP4CE6E22C8        ;                    ;
+; Top-level entity name                                                      ; ex4                ; ex4                ;
+; Family name                                                                ; Cyclone IV E       ; Cyclone IV GX      ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 12          ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-16        ;   0.0%      ;
++----------------------------+-------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                              ;
++----------------------------------+-----------------+------------------------------------------+---------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                                              ; Library ;
++----------------------------------+-----------------+------------------------------------------+---------------------------------------------------------------------------+---------+
+; ex4.bdf                          ; yes             ; User Block Diagram/Schematic File        ; C:/Users/wyc/Desktop/Computer Design/keshe-ex4/ex4/ex4.bdf                ;         ;
+; RAM.vhd                          ; yes             ; User Wizard-Generated File               ; C:/Users/wyc/Desktop/Computer Design/keshe-ex4/ex4/RAM.vhd                ;         ;
+; rd.bdf                           ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/wyc/Desktop/Computer Design/keshe-ex4/ex4/rd.bdf                 ;         ;
+; jp.bdf                           ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/wyc/Desktop/Computer Design/keshe-ex4/ex4/jp.bdf                 ;         ;
+; 2_4decoder.bdf                   ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/wyc/Desktop/Computer Design/keshe-ex4/ex4/2_4decoder.bdf         ;         ;
+; counter.bdf                      ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/wyc/Desktop/Computer Design/keshe-ex4/ex4/counter.bdf            ;         ;
+; begin_stop.bdf                   ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/wyc/Desktop/Computer Design/keshe-ex4/ex4/begin_stop.bdf         ;         ;
+; g.bdf                            ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/wyc/Desktop/Computer Design/keshe-ex4/ex4/g.bdf                  ;         ;
+; 4_16decoder.bdf                  ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/wyc/Desktop/Computer Design/keshe-ex4/ex4/4_16decoder.bdf        ;         ;
+; 74374.bdf                        ; yes             ; Megafunction                             ; c:/altera/13.0/quartus/libraries/others/maxplus2/74374.bdf                ;         ;
+; alu.bdf                          ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/wyc/Desktop/Computer Design/keshe-ex4/ex4/alu.bdf                ;         ;
+; 74181.bdf                        ; yes             ; Megafunction                             ; c:/altera/13.0/quartus/libraries/others/maxplus2/74181.bdf                ;         ;
+; multiply.bdf                     ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/wyc/Desktop/Computer Design/keshe-ex4/ex4/multiply.bdf           ;         ;
+; danyuan.bdf                      ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/wyc/Desktop/Computer Design/keshe-ex4/ex4/danyuan.bdf            ;         ;
+; allplus.bdf                      ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/wyc/Desktop/Computer Design/keshe-ex4/ex4/allplus.bdf            ;         ;
+; shift.bdf                        ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/wyc/Desktop/Computer Design/keshe-ex4/ex4/shift.bdf              ;         ;
+; 74182.bdf                        ; yes             ; Megafunction                             ; c:/altera/13.0/quartus/libraries/others/maxplus2/74182.bdf                ;         ;
+; cn.bdf                           ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/wyc/Desktop/Computer Design/keshe-ex4/ex4/cn.bdf                 ;         ;
+; m.bdf                            ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/wyc/Desktop/Computer Design/keshe-ex4/ex4/m.bdf                  ;         ;
+; s0.bdf                           ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/wyc/Desktop/Computer Design/keshe-ex4/ex4/s0.bdf                 ;         ;
+; s1.bdf                           ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/wyc/Desktop/Computer Design/keshe-ex4/ex4/s1.bdf                 ;         ;
+; s2.bdf                           ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/wyc/Desktop/Computer Design/keshe-ex4/ex4/s2.bdf                 ;         ;
+; s3.bdf                           ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/wyc/Desktop/Computer Design/keshe-ex4/ex4/s3.bdf                 ;         ;
+; s4.bdf                           ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/wyc/Desktop/Computer Design/keshe-ex4/ex4/s4.bdf                 ;         ;
+; s5.bdf                           ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/wyc/Desktop/Computer Design/keshe-ex4/ex4/s5.bdf                 ;         ;
+; s6.bdf                           ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/wyc/Desktop/Computer Design/keshe-ex4/ex4/s6.bdf                 ;         ;
+; s7.bdf                           ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/wyc/Desktop/Computer Design/keshe-ex4/ex4/s7.bdf                 ;         ;
+; choose_2.bdf                     ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/wyc/Desktop/Computer Design/keshe-ex4/ex4/choose_2.bdf           ;         ;
+; ma.bdf                           ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/wyc/Desktop/Computer Design/keshe-ex4/ex4/ma.bdf                 ;         ;
+; ra.bdf                           ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/wyc/Desktop/Computer Design/keshe-ex4/ex4/ra.bdf                 ;         ;
+; altsyncram.tdf                   ; yes             ; Megafunction                             ; c:/altera/13.0/quartus/libraries/megafunctions/altsyncram.tdf             ;         ;
+; stratix_ram_block.inc            ; yes             ; Megafunction                             ; c:/altera/13.0/quartus/libraries/megafunctions/stratix_ram_block.inc      ;         ;
+; lpm_mux.inc                      ; yes             ; Megafunction                             ; c:/altera/13.0/quartus/libraries/megafunctions/lpm_mux.inc                ;         ;
+; lpm_decode.inc                   ; yes             ; Megafunction                             ; c:/altera/13.0/quartus/libraries/megafunctions/lpm_decode.inc             ;         ;
+; aglobal130.inc                   ; yes             ; Megafunction                             ; c:/altera/13.0/quartus/libraries/megafunctions/aglobal130.inc             ;         ;
+; a_rdenreg.inc                    ; yes             ; Megafunction                             ; c:/altera/13.0/quartus/libraries/megafunctions/a_rdenreg.inc              ;         ;
+; altrom.inc                       ; yes             ; Megafunction                             ; c:/altera/13.0/quartus/libraries/megafunctions/altrom.inc                 ;         ;
+; altram.inc                       ; yes             ; Megafunction                             ; c:/altera/13.0/quartus/libraries/megafunctions/altram.inc                 ;         ;
+; altdpram.inc                     ; yes             ; Megafunction                             ; c:/altera/13.0/quartus/libraries/megafunctions/altdpram.inc               ;         ;
+; db/altsyncram_fqj1.tdf           ; yes             ; Auto-Generated Megafunction              ; C:/Users/wyc/Desktop/Computer Design/keshe-ex4/ex4/db/altsyncram_fqj1.tdf ;         ;
+; db/altsyncram_d3a2.tdf           ; yes             ; Auto-Generated Megafunction              ; C:/Users/wyc/Desktop/Computer Design/keshe-ex4/ex4/db/altsyncram_d3a2.tdf ;         ;
+; ram.mif                          ; yes             ; Auto-Found Memory Initialization File    ; C:/Users/wyc/Desktop/Computer Design/keshe-ex4/ex4/ram.mif                ;         ;
+; sld_mod_ram_rom.vhd              ; yes             ; Encrypted Megafunction                   ; c:/altera/13.0/quartus/libraries/megafunctions/sld_mod_ram_rom.vhd        ;         ;
+; sld_rom_sr.vhd                   ; yes             ; Encrypted Megafunction                   ; c:/altera/13.0/quartus/libraries/megafunctions/sld_rom_sr.vhd             ;         ;
+; wr.bdf                           ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/wyc/Desktop/Computer Design/keshe-ex4/ex4/wr.bdf                 ;         ;
+; 74273.bdf                        ; yes             ; Megafunction                             ; c:/altera/13.0/quartus/libraries/others/maxplus2/74273.bdf                ;         ;
+; cpmar.bdf                        ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/wyc/Desktop/Computer Design/keshe-ex4/ex4/cpmar.bdf              ;         ;
+; cpr0.bdf                         ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/wyc/Desktop/Computer Design/keshe-ex4/ex4/cpr0.bdf               ;         ;
+; pb.bdf                           ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/wyc/Desktop/Computer Design/keshe-ex4/ex4/pb.bdf                 ;         ;
+; rb.bdf                           ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/wyc/Desktop/Computer Design/keshe-ex4/ex4/rb.bdf                 ;         ;
+; pc.bdf                           ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/wyc/Desktop/Computer Design/keshe-ex4/ex4/pc.bdf                 ;         ;
+; cppc.bdf                         ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/wyc/Desktop/Computer Design/keshe-ex4/ex4/cppc.bdf               ;         ;
+; cpr1.bdf                         ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/wyc/Desktop/Computer Design/keshe-ex4/ex4/cpr1.bdf               ;         ;
+; cpir.bdf                         ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/wyc/Desktop/Computer Design/keshe-ex4/ex4/cpir.bdf               ;         ;
+; sld_hub.vhd                      ; yes             ; Encrypted Megafunction                   ; c:/altera/13.0/quartus/libraries/megafunctions/sld_hub.vhd                ;         ;
+; sld_jtag_hub.vhd                 ; yes             ; Encrypted Megafunction                   ; c:/altera/13.0/quartus/libraries/megafunctions/sld_jtag_hub.vhd           ;         ;
++----------------------------------+-----------------+------------------------------------------+---------------------------------------------------------------------------+---------+
+
+
++------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                            ;
++---------------------------------------------+--------------------------+
+; Resource                                    ; Usage                    ;
++---------------------------------------------+--------------------------+
+; Estimated Total logic elements              ; 418                      ;
+;                                             ;                          ;
+; Total combinational functions               ; 364                      ;
+; Logic element usage by number of LUT inputs ;                          ;
+;     -- 4 input functions                    ; 215                      ;
+;     -- 3 input functions                    ; 63                       ;
+;     -- <=2 input functions                  ; 86                       ;
+;                                             ;                          ;
+; Logic elements by mode                      ;                          ;
+;     -- normal mode                          ; 345                      ;
+;     -- arithmetic mode                      ; 19                       ;
+;                                             ;                          ;
+; Total registers                             ; 154                      ;
+;     -- Dedicated logic registers            ; 154                      ;
+;     -- I/O registers                        ; 0                        ;
+;                                             ;                          ;
+; I/O pins                                    ; 13                       ;
+; Total memory bits                           ; 2048                     ;
+; Embedded Multiplier 9-bit elements          ; 0                        ;
+; Maximum fan-out node                        ; altera_internal_jtag~TDO ;
+; Maximum fan-out                             ; 146                      ;
+; Total fan-out                               ; 1905                     ;
+; Average fan-out                             ; 3.40                     ;
++---------------------------------------------+--------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                                       ;
++---------------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                                          ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                      ; Library Name ;
++---------------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
+; |ex4                                                                ; 364 (11)          ; 154 (0)      ; 2048        ; 0            ; 0       ; 0         ; 13   ; 0            ; |ex4                                                                                                                                                     ;              ;
+;    |74273:MAR|                                                      ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ex4|74273:MAR                                                                                                                                           ;              ;
+;    |74374:IR|                                                       ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ex4|74374:IR                                                                                                                                            ;              ;
+;    |74374:R0|                                                       ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ex4|74374:R0                                                                                                                                            ;              ;
+;    |74374:R1|                                                       ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ex4|74374:R1                                                                                                                                            ;              ;
+;    |ALU:inst6|                                                      ; 116 (22)          ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ex4|ALU:inst6                                                                                                                                           ;              ;
+;       |74181:inst1|                                                 ; 12 (12)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ex4|ALU:inst6|74181:inst1                                                                                                                               ;              ;
+;       |74181:inst|                                                  ; 15 (15)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ex4|ALU:inst6|74181:inst                                                                                                                                ;              ;
+;       |74182:inst2|                                                 ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ex4|ALU:inst6|74182:inst2                                                                                                                               ;              ;
+;       |multiply:inst41|                                             ; 63 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ex4|ALU:inst6|multiply:inst41                                                                                                                           ;              ;
+;          |danyuan:inst19|                                           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ex4|ALU:inst6|multiply:inst41|danyuan:inst19                                                                                                            ;              ;
+;          |danyuan:inst22|                                           ; 3 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ex4|ALU:inst6|multiply:inst41|danyuan:inst22                                                                                                            ;              ;
+;             |allplus:inst|                                          ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ex4|ALU:inst6|multiply:inst41|danyuan:inst22|allplus:inst                                                                                               ;              ;
+;          |danyuan:inst23|                                           ; 3 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ex4|ALU:inst6|multiply:inst41|danyuan:inst23                                                                                                            ;              ;
+;             |allplus:inst|                                          ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ex4|ALU:inst6|multiply:inst41|danyuan:inst23|allplus:inst                                                                                               ;              ;
+;          |danyuan:inst24|                                           ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ex4|ALU:inst6|multiply:inst41|danyuan:inst24                                                                                                            ;              ;
+;             |allplus:inst|                                          ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ex4|ALU:inst6|multiply:inst41|danyuan:inst24|allplus:inst                                                                                               ;              ;
+;          |danyuan:inst25|                                           ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ex4|ALU:inst6|multiply:inst41|danyuan:inst25                                                                                                            ;              ;
+;             |allplus:inst|                                          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ex4|ALU:inst6|multiply:inst41|danyuan:inst25|allplus:inst                                                                                               ;              ;
+;          |danyuan:inst26|                                           ; 3 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ex4|ALU:inst6|multiply:inst41|danyuan:inst26                                                                                                            ;              ;
+;             |allplus:inst|                                          ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ex4|ALU:inst6|multiply:inst41|danyuan:inst26|allplus:inst                                                                                               ;              ;
+;          |danyuan:inst27|                                           ; 3 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ex4|ALU:inst6|multiply:inst41|danyuan:inst27                                                                                                            ;              ;
+;             |allplus:inst|                                          ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ex4|ALU:inst6|multiply:inst41|danyuan:inst27|allplus:inst                                                                                               ;              ;
+;          |danyuan:inst28|                                           ; 3 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ex4|ALU:inst6|multiply:inst41|danyuan:inst28                                                                                                            ;              ;
+;             |allplus:inst|                                          ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ex4|ALU:inst6|multiply:inst41|danyuan:inst28|allplus:inst                                                                                               ;              ;
+;          |danyuan:inst29|                                           ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ex4|ALU:inst6|multiply:inst41|danyuan:inst29                                                                                                            ;              ;
+;             |allplus:inst|                                          ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ex4|ALU:inst6|multiply:inst41|danyuan:inst29|allplus:inst                                                                                               ;              ;
+;          |danyuan:inst2|                                            ; 3 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ex4|ALU:inst6|multiply:inst41|danyuan:inst2                                                                                                             ;              ;
+;             |allplus:inst|                                          ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ex4|ALU:inst6|multiply:inst41|danyuan:inst2|allplus:inst                                                                                                ;              ;
+;          |danyuan:inst30|                                           ; 3 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ex4|ALU:inst6|multiply:inst41|danyuan:inst30                                                                                                            ;              ;
+;             |allplus:inst|                                          ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ex4|ALU:inst6|multiply:inst41|danyuan:inst30|allplus:inst                                                                                               ;              ;
+;          |danyuan:inst31|                                           ; 3 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ex4|ALU:inst6|multiply:inst41|danyuan:inst31                                                                                                            ;              ;
+;             |allplus:inst|                                          ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ex4|ALU:inst6|multiply:inst41|danyuan:inst31|allplus:inst                                                                                               ;              ;
+;          |danyuan:inst32|                                           ; 3 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ex4|ALU:inst6|multiply:inst41|danyuan:inst32                                                                                                            ;              ;
+;             |allplus:inst|                                          ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ex4|ALU:inst6|multiply:inst41|danyuan:inst32|allplus:inst                                                                                               ;              ;
+;          |danyuan:inst33|                                           ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ex4|ALU:inst6|multiply:inst41|danyuan:inst33                                                                                                            ;              ;
+;             |allplus:inst|                                          ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ex4|ALU:inst6|multiply:inst41|danyuan:inst33|allplus:inst                                                                                               ;              ;
+;          |danyuan:inst35|                                           ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ex4|ALU:inst6|multiply:inst41|danyuan:inst35                                                                                                            ;              ;
+;             |allplus:inst|                                          ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ex4|ALU:inst6|multiply:inst41|danyuan:inst35|allplus:inst                                                                                               ;              ;
+;          |danyuan:inst37|                                           ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ex4|ALU:inst6|multiply:inst41|danyuan:inst37                                                                                                            ;              ;
+;             |allplus:inst|                                          ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ex4|ALU:inst6|multiply:inst41|danyuan:inst37|allplus:inst                                                                                               ;              ;
+;          |danyuan:inst39|                                           ; 3 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ex4|ALU:inst6|multiply:inst41|danyuan:inst39                                                                                                            ;              ;
+;             |allplus:inst|                                          ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ex4|ALU:inst6|multiply:inst41|danyuan:inst39|allplus:inst                                                                                               ;              ;
+;          |danyuan:inst3|                                            ; 3 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ex4|ALU:inst6|multiply:inst41|danyuan:inst3                                                                                                             ;              ;
+;             |allplus:inst|                                          ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ex4|ALU:inst6|multiply:inst41|danyuan:inst3|allplus:inst                                                                                                ;              ;
+;          |danyuan:inst41|                                           ; 3 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ex4|ALU:inst6|multiply:inst41|danyuan:inst41                                                                                                            ;              ;
+;             |allplus:inst|                                          ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ex4|ALU:inst6|multiply:inst41|danyuan:inst41|allplus:inst                                                                                               ;              ;
+;          |danyuan:inst45|                                           ; 3 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ex4|ALU:inst6|multiply:inst41|danyuan:inst45                                                                                                            ;              ;
+;             |allplus:inst|                                          ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ex4|ALU:inst6|multiply:inst41|danyuan:inst45|allplus:inst                                                                                               ;              ;
+;          |danyuan:inst51|                                           ; 7 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ex4|ALU:inst6|multiply:inst41|danyuan:inst51                                                                                                            ;              ;
+;             |allplus:inst|                                          ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ex4|ALU:inst6|multiply:inst41|danyuan:inst51|allplus:inst                                                                                               ;              ;
+;          |danyuan:inst53|                                           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ex4|ALU:inst6|multiply:inst41|danyuan:inst53                                                                                                            ;              ;
+;          |danyuan:inst6|                                            ; 3 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ex4|ALU:inst6|multiply:inst41|danyuan:inst6                                                                                                             ;              ;
+;             |allplus:inst|                                          ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ex4|ALU:inst6|multiply:inst41|danyuan:inst6|allplus:inst                                                                                                ;              ;
+;    |CN:inst18|                                                      ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ex4|CN:inst18                                                                                                                                           ;              ;
+;    |CPMAR:inst37|                                                   ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ex4|CPMAR:inst37                                                                                                                                        ;              ;
+;    |G:inst40|                                                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ex4|G:inst40                                                                                                                                            ;              ;
+;    |JP:inst2|                                                       ; 6 (1)             ; 3 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ex4|JP:inst2                                                                                                                                            ;              ;
+;       |2_4decoder:inst|                                             ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ex4|JP:inst2|2_4decoder:inst                                                                                                                            ;              ;
+;       |counter:inst5|                                               ; 2 (2)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ex4|JP:inst2|counter:inst5                                                                                                                              ;              ;
+;    |M:inst13|                                                       ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ex4|M:inst13                                                                                                                                            ;              ;
+;    |PB:inst35|                                                      ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ex4|PB:inst35                                                                                                                                           ;              ;
+;    |PC:INSTPC|                                                      ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ex4|PC:INSTPC                                                                                                                                           ;              ;
+;    |RA:inst34|                                                      ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ex4|RA:inst34                                                                                                                                           ;              ;
+;    |RAM:ram|                                                        ; 57 (0)            ; 34 (0)       ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |ex4|RAM:ram                                                                                                                                             ;              ;
+;       |altsyncram:altsyncram_component|                             ; 57 (0)            ; 34 (0)       ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |ex4|RAM:ram|altsyncram:altsyncram_component                                                                                                             ;              ;
+;          |altsyncram_fqj1:auto_generated|                           ; 57 (0)            ; 34 (0)       ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |ex4|RAM:ram|altsyncram:altsyncram_component|altsyncram_fqj1:auto_generated                                                                              ;              ;
+;             |altsyncram_d3a2:altsyncram1|                           ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |ex4|RAM:ram|altsyncram:altsyncram_component|altsyncram_fqj1:auto_generated|altsyncram_d3a2:altsyncram1                                                  ;              ;
+;             |sld_mod_ram_rom:mgl_prim2|                             ; 57 (34)           ; 34 (25)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ex4|RAM:ram|altsyncram:altsyncram_component|altsyncram_fqj1:auto_generated|sld_mod_ram_rom:mgl_prim2                                                    ;              ;
+;                |sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr| ; 23 (23)           ; 9 (9)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ex4|RAM:ram|altsyncram:altsyncram_component|altsyncram_fqj1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr ;              ;
+;    |RB:inst36|                                                      ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ex4|RB:inst36                                                                                                                                           ;              ;
+;    |RD:inst38|                                                      ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ex4|RD:inst38                                                                                                                                           ;              ;
+;    |S0:inst17|                                                      ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ex4|S0:inst17                                                                                                                                           ;              ;
+;    |S1:inst16|                                                      ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ex4|S1:inst16                                                                                                                                           ;              ;
+;    |S2:inst15|                                                      ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ex4|S2:inst15                                                                                                                                           ;              ;
+;    |S3:inst14|                                                      ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ex4|S3:inst14                                                                                                                                           ;              ;
+;    |S4:inst23|                                                      ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ex4|S4:inst23                                                                                                                                           ;              ;
+;    |S5:inst22|                                                      ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ex4|S5:inst22                                                                                                                                           ;              ;
+;    |S6:inst20|                                                      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ex4|S6:inst20                                                                                                                                           ;              ;
+;    |WR:inst39|                                                      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ex4|WR:inst39                                                                                                                                           ;              ;
+;    |begin_stop:SE|                                                  ; 2 (2)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ex4|begin_stop:SE                                                                                                                                       ;              ;
+;    |choose_2:inst3|                                                 ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ex4|choose_2:inst3                                                                                                                                      ;              ;
+;    |choose_2:inst4|                                                 ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ex4|choose_2:inst4                                                                                                                                      ;              ;
+;    |sld_hub:auto_hub|                                               ; 112 (1)           ; 80 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ex4|sld_hub:auto_hub                                                                                                                                    ;              ;
+;       |sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|                ; 111 (74)          ; 80 (52)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ex4|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst                                                                                       ;              ;
+;          |sld_rom_sr:hub_info_reg|                                  ; 20 (20)           ; 9 (9)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ex4|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|sld_rom_sr:hub_info_reg                                                               ;              ;
+;          |sld_shadow_jsm:shadow_jsm|                                ; 17 (17)           ; 19 (19)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ex4|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|sld_shadow_jsm:shadow_jsm                                                             ;              ;
++---------------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                                                   ;
++---------------------------------------------------------------------------------------------------------------+------+----------------+--------------+--------------+--------------+--------------+------+---------+
+; Name                                                                                                          ; Type ; Mode           ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF     ;
++---------------------------------------------------------------------------------------------------------------+------+----------------+--------------+--------------+--------------+--------------+------+---------+
+; RAM:ram|altsyncram:altsyncram_component|altsyncram_fqj1:auto_generated|altsyncram_d3a2:altsyncram1|ALTSYNCRAM ; AUTO ; True Dual Port ; 256          ; 8            ; 256          ; 8            ; 2048 ; RAM.mif ;
++---------------------------------------------------------------------------------------------------------------+------+----------------+--------------+--------------+--------------+--------------+------+---------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis IP Cores Summary                                                                                                        ;
++--------+--------------+---------+--------------+--------------+-----------------+------------------------------------------------------------+
+; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance ; IP Include File                                            ;
++--------+--------------+---------+--------------+--------------+-----------------+------------------------------------------------------------+
+; Altera ; RAM: 1-PORT  ; 13.0    ; N/A          ; N/A          ; |ex4|RAM:ram    ; C:/Users/wyc/Desktop/Computer Design/keshe-ex4/ex4/RAM.vhd ;
++--------+--------------+---------+--------------+--------------+-----------------+------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                                                                       ;
++---------------------------------------------------------------------------------------------------------------------------------+----------------------------------------+
+; Register name                                                                                                                   ; Reason for Removal                     ;
++---------------------------------------------------------------------------------------------------------------------------------+----------------------------------------+
+; RAM:ram|altsyncram:altsyncram_component|altsyncram_fqj1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_shift_cntr_reg[3] ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 1                                                                                           ;                                        ;
++---------------------------------------------------------------------------------------------------------------------------------+----------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 154   ;
+; Number of registers using Synchronous Clear  ; 17    ;
+; Number of registers using Synchronous Load   ; 19    ;
+; Number of registers using Asynchronous Clear ; 65    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 83    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++----------------------------------------------------------------------------------------+
+; Inverted Register Statistics                                                           ;
++------------------------------------------------------------------------------+---------+
+; Inverted Register                                                            ; Fan out ;
++------------------------------------------------------------------------------+---------+
+; sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|tdo            ; 1       ;
+; sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|jtag_ir_reg[2] ; 2       ;
+; sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|jtag_ir_reg[1] ; 3       ;
+; Total number of inverted registers = 3                                       ;         ;
++------------------------------------------------------------------------------+---------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                                                                                                         ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                                                                               ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |ex4|RAM:ram|altsyncram:altsyncram_component|altsyncram_fqj1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_shift_cntr_reg[0]                                     ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |ex4|RAM:ram|altsyncram:altsyncram_component|altsyncram_fqj1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_reg[0]                                                ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |ex4|RAM:ram|altsyncram:altsyncram_component|altsyncram_fqj1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_addr_reg[4]                                                ;
+; 5:1                ; 5 bits    ; 15 LEs        ; 5 LEs                ; 10 LEs                 ; Yes        ; |ex4|RAM:ram|altsyncram:altsyncram_component|altsyncram_fqj1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[0] ;
+; 24:1               ; 4 bits    ; 64 LEs        ; 48 LEs               ; 16 LEs                 ; Yes        ; |ex4|RAM:ram|altsyncram:altsyncram_component|altsyncram_fqj1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR[0]      ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |ex4|ALU:inst6|inst58                                                                                                                                                    ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |ex4|ALU:inst6|inst56                                                                                                                                                    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Source assignments for RAM:ram|altsyncram:altsyncram_component|altsyncram_fqj1:auto_generated|altsyncram_d3a2:altsyncram1 ;
++---------------------------------+--------------------+------+-------------------------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                                          ;
++---------------------------------+--------------------+------+-------------------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                           ;
++---------------------------------+--------------------+------+-------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: RAM:ram|altsyncram:altsyncram_component ;
++------------------------------------+----------------------+--------------------------+
+; Parameter Name                     ; Value                ; Type                     ;
++------------------------------------+----------------------+--------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                  ;
+; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY               ;
+; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY             ;
+; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE             ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE           ;
+; WIDTH_BYTEENA                      ; 1                    ; Untyped                  ;
+; OPERATION_MODE                     ; SINGLE_PORT          ; Untyped                  ;
+; WIDTH_A                            ; 8                    ; Signed Integer           ;
+; WIDTHAD_A                          ; 8                    ; Signed Integer           ;
+; NUMWORDS_A                         ; 256                  ; Signed Integer           ;
+; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                  ;
+; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                  ;
+; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                  ;
+; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                  ;
+; INDATA_ACLR_A                      ; NONE                 ; Untyped                  ;
+; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                  ;
+; WIDTH_B                            ; 1                    ; Untyped                  ;
+; WIDTHAD_B                          ; 1                    ; Untyped                  ;
+; NUMWORDS_B                         ; 1                    ; Untyped                  ;
+; INDATA_REG_B                       ; CLOCK1               ; Untyped                  ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                  ;
+; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                  ;
+; ADDRESS_REG_B                      ; CLOCK1               ; Untyped                  ;
+; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                  ;
+; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                  ;
+; INDATA_ACLR_B                      ; NONE                 ; Untyped                  ;
+; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                  ;
+; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                  ;
+; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                  ;
+; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                  ;
+; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                  ;
+; WIDTH_BYTEENA_A                    ; 1                    ; Signed Integer           ;
+; WIDTH_BYTEENA_B                    ; 1                    ; Untyped                  ;
+; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                  ;
+; BYTE_SIZE                          ; 8                    ; Untyped                  ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                  ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                  ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                  ;
+; INIT_FILE                          ; RAM.mif              ; Untyped                  ;
+; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                  ;
+; MAXIMUM_DEPTH                      ; 0                    ; Untyped                  ;
+; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                  ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped                  ;
+; CLOCK_ENABLE_OUTPUT_A              ; BYPASS               ; Untyped                  ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped                  ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                  ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                  ;
+; ENABLE_ECC                         ; FALSE                ; Untyped                  ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                  ;
+; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                  ;
+; DEVICE_FAMILY                      ; Cyclone IV E         ; Untyped                  ;
+; CBXI_PARAMETER                     ; altsyncram_fqj1      ; Untyped                  ;
++------------------------------------+----------------------+--------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; altsyncram Parameter Settings by Entity Instance                                    ;
++-------------------------------------------+-----------------------------------------+
+; Name                                      ; Value                                   ;
++-------------------------------------------+-----------------------------------------+
+; Number of entity instances                ; 1                                       ;
+; Entity Instance                           ; RAM:ram|altsyncram:altsyncram_component ;
+;     -- OPERATION_MODE                     ; SINGLE_PORT                             ;
+;     -- WIDTH_A                            ; 8                                       ;
+;     -- NUMWORDS_A                         ; 256                                     ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                            ;
+;     -- WIDTH_B                            ; 1                                       ;
+;     -- NUMWORDS_B                         ; 1                                       ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                  ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                            ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                    ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                               ;
++-------------------------------------------+-----------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------+
+; In-System Memory Content Editor Settings                                                                                           ;
++----------------+-------------+-------+-------+------------+------------------------------------------------------------------------+
+; Instance Index ; Instance ID ; Width ; Depth ; Mode       ; Hierarchy Location                                                     ;
++----------------+-------------+-------+-------+------------+------------------------------------------------------------------------+
+; 0              ; RAM         ; 8     ; 256   ; Read/Write ; RAM:ram|altsyncram:altsyncram_component|altsyncram_fqj1:auto_generated ;
++----------------+-------------+-------+-------+------------+------------------------------------------------------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.0.0 Build 156 04/24/2013 SJ Full Version
+    Info: Processing started: Mon Nov 25 03:56:51 2024
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ex4 -c ex4
+Info (11104): Parallel Compilation has detected 16 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 12 of the 12 physical processors detected instead.
+Info (12021): Found 1 design units, including 1 entities, in source file ex4.bdf
+    Info (12023): Found entity 1: ex4
+Info (12021): Found 2 design units, including 1 entities, in source file ram.vhd
+    Info (12022): Found design unit 1: ram-SYN
+    Info (12023): Found entity 1: RAM
+Info (12127): Elaborating entity "ex4" for the top level hierarchy
+Warning (275011): Block or symbol "MA" of instance "inst33" overlaps another block or symbol
+Warning (275002): No superset bus at connection
+Warning (12125): Using design file rd.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: RD
+Info (12128): Elaborating entity "RD" for hierarchy "RD:inst38"
+Warning (12125): Using design file jp.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: JP
+Info (12128): Elaborating entity "JP" for hierarchy "JP:inst2"
+Warning (12125): Using design file 2_4decoder.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: 2_4decoder
+Info (12128): Elaborating entity "2_4decoder" for hierarchy "JP:inst2|2_4decoder:inst"
+Warning (12125): Using design file counter.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: counter
+Info (12128): Elaborating entity "counter" for hierarchy "JP:inst2|counter:inst5"
+Warning (12125): Using design file begin_stop.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: begin_stop
+Info (12128): Elaborating entity "begin_stop" for hierarchy "begin_stop:SE"
+Warning (12125): Using design file g.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: G
+Info (12128): Elaborating entity "G" for hierarchy "G:inst40"
+Warning (12125): Using design file 4_16decoder.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: 4_16decoder
+Info (12128): Elaborating entity "4_16decoder" for hierarchy "4_16decoder:inst24"
+Info (12128): Elaborating entity "74374" for hierarchy "74374:IR"
+Info (12130): Elaborated megafunction instantiation "74374:IR"
+Warning (12125): Using design file alu.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: ALU
+Info (12128): Elaborating entity "ALU" for hierarchy "ALU:inst6"
+Info (12128): Elaborating entity "74181" for hierarchy "ALU:inst6|74181:inst1"
+Info (12130): Elaborated megafunction instantiation "ALU:inst6|74181:inst1"
+Warning (12125): Using design file multiply.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: multiply
+Info (12128): Elaborating entity "multiply" for hierarchy "ALU:inst6|multiply:inst41"
+Warning (275080): Converted elements in bus name "qq" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "qq[3]" to "qq3"
+    Warning (275081): Converted element name(s) from "qq[1]" to "qq1"
+    Warning (275081): Converted element name(s) from "qq[2]" to "qq2"
+    Warning (275081): Converted element name(s) from "qq[0]" to "qq0"
+    Warning (275081): Converted element name(s) from "qq[4]" to "qq4"
+    Warning (275081): Converted element name(s) from "qq[5]" to "qq5"
+    Warning (275081): Converted element name(s) from "qq[6]" to "qq6"
+    Warning (275081): Converted element name(s) from "qq[7]" to "qq7"
+Warning (12125): Using design file danyuan.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: danyuan
+Info (12128): Elaborating entity "danyuan" for hierarchy "ALU:inst6|multiply:inst41|danyuan:inst51"
+Warning (12125): Using design file allplus.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: allplus
+Info (12128): Elaborating entity "allplus" for hierarchy "ALU:inst6|multiply:inst41|danyuan:inst51|allplus:inst"
+Warning (12125): Using design file shift.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: shift
+Info (12128): Elaborating entity "shift" for hierarchy "ALU:inst6|shift:inst4"
+Info (12128): Elaborating entity "74182" for hierarchy "ALU:inst6|74182:inst2"
+Info (12130): Elaborated megafunction instantiation "ALU:inst6|74182:inst2"
+Warning (12125): Using design file cn.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: CN
+Info (12128): Elaborating entity "CN" for hierarchy "CN:inst18"
+Warning (12125): Using design file m.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: M
+Info (12128): Elaborating entity "M" for hierarchy "M:inst13"
+Warning (275011): Block or symbol "NOT" of instance "inst5" overlaps another block or symbol
+Warning (275011): Block or symbol "NOT" of instance "inst8" overlaps another block or symbol
+Warning (12125): Using design file s0.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: S0
+Info (12128): Elaborating entity "S0" for hierarchy "S0:inst17"
+Warning (12125): Using design file s1.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: S1
+Info (12128): Elaborating entity "S1" for hierarchy "S1:inst16"
+Warning (12125): Using design file s2.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: S2
+Info (12128): Elaborating entity "S2" for hierarchy "S2:inst15"
+Warning (12125): Using design file s3.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: S3
+Info (12128): Elaborating entity "S3" for hierarchy "S3:inst14"
+Warning (12125): Using design file s4.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: S4
+Info (12128): Elaborating entity "S4" for hierarchy "S4:inst23"
+Warning (12125): Using design file s5.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: S5
+Info (12128): Elaborating entity "S5" for hierarchy "S5:inst22"
+Warning (12125): Using design file s6.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: S6
+Info (12128): Elaborating entity "S6" for hierarchy "S6:inst20"
+Warning (12125): Using design file s7.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: S7
+Info (12128): Elaborating entity "S7" for hierarchy "S7:inst19"
+Warning (12125): Using design file choose_2.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: choose_2
+Info (12128): Elaborating entity "choose_2" for hierarchy "choose_2:inst3"
+Warning (12125): Using design file ma.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: MA
+Info (12128): Elaborating entity "MA" for hierarchy "MA:inst33"
+Warning (12125): Using design file ra.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: RA
+Info (12128): Elaborating entity "RA" for hierarchy "RA:inst34"
+Info (12128): Elaborating entity "RAM" for hierarchy "RAM:ram"
+Info (12128): Elaborating entity "altsyncram" for hierarchy "RAM:ram|altsyncram:altsyncram_component"
+Info (12130): Elaborated megafunction instantiation "RAM:ram|altsyncram:altsyncram_component"
+Info (12133): Instantiated megafunction "RAM:ram|altsyncram:altsyncram_component" with the following parameter:
+    Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
+    Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
+    Info (12134): Parameter "init_file" = "RAM.mif"
+    Info (12134): Parameter "intended_device_family" = "Cyclone IV E"
+    Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=YES,INSTANCE_NAME=RAM"
+    Info (12134): Parameter "lpm_type" = "altsyncram"
+    Info (12134): Parameter "numwords_a" = "256"
+    Info (12134): Parameter "operation_mode" = "SINGLE_PORT"
+    Info (12134): Parameter "outdata_aclr_a" = "NONE"
+    Info (12134): Parameter "outdata_reg_a" = "UNREGISTERED"
+    Info (12134): Parameter "power_up_uninitialized" = "FALSE"
+    Info (12134): Parameter "read_during_write_mode_port_a" = "NEW_DATA_NO_NBE_READ"
+    Info (12134): Parameter "widthad_a" = "8"
+    Info (12134): Parameter "width_a" = "8"
+    Info (12134): Parameter "width_byteena_a" = "1"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_fqj1.tdf
+    Info (12023): Found entity 1: altsyncram_fqj1
+Info (12128): Elaborating entity "altsyncram_fqj1" for hierarchy "RAM:ram|altsyncram:altsyncram_component|altsyncram_fqj1:auto_generated"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_d3a2.tdf
+    Info (12023): Found entity 1: altsyncram_d3a2
+Info (12128): Elaborating entity "altsyncram_d3a2" for hierarchy "RAM:ram|altsyncram:altsyncram_component|altsyncram_fqj1:auto_generated|altsyncram_d3a2:altsyncram1"
+Info (12128): Elaborating entity "sld_mod_ram_rom" for hierarchy "RAM:ram|altsyncram:altsyncram_component|altsyncram_fqj1:auto_generated|sld_mod_ram_rom:mgl_prim2"
+Info (12130): Elaborated megafunction instantiation "RAM:ram|altsyncram:altsyncram_component|altsyncram_fqj1:auto_generated|sld_mod_ram_rom:mgl_prim2"
+Info (12133): Instantiated megafunction "RAM:ram|altsyncram:altsyncram_component|altsyncram_fqj1:auto_generated|sld_mod_ram_rom:mgl_prim2" with the following parameter:
+    Info (12134): Parameter "CVALUE" = "00000000"
+    Info (12134): Parameter "IS_DATA_IN_RAM" = "1"
+    Info (12134): Parameter "IS_READABLE" = "1"
+    Info (12134): Parameter "NODE_NAME" = "1380011264"
+    Info (12134): Parameter "NUMWORDS" = "256"
+    Info (12134): Parameter "SHIFT_COUNT_BITS" = "4"
+    Info (12134): Parameter "WIDTH_WORD" = "8"
+    Info (12134): Parameter "WIDTHAD" = "8"
+Info (12128): Elaborating entity "sld_rom_sr" for hierarchy "RAM:ram|altsyncram:altsyncram_component|altsyncram_fqj1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr"
+Warning (12125): Using design file wr.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: WR
+Info (12128): Elaborating entity "WR" for hierarchy "WR:inst39"
+Info (12128): Elaborating entity "74273" for hierarchy "74273:MAR"
+Info (12130): Elaborated megafunction instantiation "74273:MAR"
+Warning (12125): Using design file cpmar.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: CPMAR
+Info (12128): Elaborating entity "CPMAR" for hierarchy "CPMAR:inst37"
+Warning (12125): Using design file cpr0.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: CPR0
+Info (12128): Elaborating entity "CPR0" for hierarchy "CPR0:inst28"
+Warning (12125): Using design file pb.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: PB
+Info (12128): Elaborating entity "PB" for hierarchy "PB:inst35"
+Warning (12125): Using design file rb.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: RB
+Info (12128): Elaborating entity "RB" for hierarchy "RB:inst36"
+Warning (12125): Using design file pc.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: PC
+Info (12128): Elaborating entity "PC" for hierarchy "PC:INSTPC"
+Warning (12125): Using design file cppc.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: CPPC
+Info (12128): Elaborating entity "CPPC" for hierarchy "CPPC:inst31"
+Warning (12125): Using design file cpr1.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: CPR1
+Info (12128): Elaborating entity "CPR1" for hierarchy "CPR1:inst30"
+Warning (12125): Using design file cpir.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: CPIR
+Info (12128): Elaborating entity "CPIR" for hierarchy "CPIR:inst32"
+Info (13014): Ignored 30 buffer(s)
+    Info (13019): Ignored 30 SOFT buffer(s)
+Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
+    Warning (13049): Converted tri-state buffer "74374:R1|47" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "74374:R1|46" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "74374:R1|45" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "74374:R1|44" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "74374:R1|43" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "74374:R1|42" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "74374:R1|41" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "74374:R1|40" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "74374:R0|47" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "74374:R0|46" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "74374:R0|45" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "74374:R0|44" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "74374:R0|43" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "74374:R0|42" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "74374:R0|41" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "74374:R0|40" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "74374:IR|47" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "74374:IR|46" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "74374:IR|45" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "74374:IR|44" feeding internal logic into a wire
+Warning (19016): Clock multiplexers are found and protected
+    Warning (19017): Found clock multiplexer CPMAR:inst37|inst~synth
+Warning (19016): Clock multiplexers are found and protected
+    Warning (19017): Found clock multiplexer RD:inst38|inst2~synth
+    Warning (19017): Found clock multiplexer RA:inst34|inst4~synth
+Info (286031): Timing-Driven Synthesis is running on partition "Top"
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 455 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 7 input pins
+    Info (21059): Implemented 10 output pins
+    Info (21061): Implemented 429 logic cells
+    Info (21064): Implemented 8 RAM segments
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 73 warnings
+    Info: Peak virtual memory: 4678 megabytes
+    Info: Processing ended: Mon Nov 25 03:56:54 2024
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:02
+
+
